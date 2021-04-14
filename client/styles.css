@@ -6,6 +6,24 @@
 
 .home {
   height: 100vh;
+  background-color: #240115;
+}
+
+.flex {
+  position: fixed;
+  top: 45%;
+  left: 40%;
+}
+
+.text {
+  color: white;
+  font-size: 4rem;
+}
+
+.btn-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav_links {
