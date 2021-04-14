@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Home from './Home.jsx';
+import Navbar from './Navbar.jsx';
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -12,7 +15,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        REACT IS RUNNING
+        <Home />
+        <Navbar />
       </div>
     )
   }
