@@ -7,10 +7,10 @@ const Home = (props) => (
   <div className="home">
     <div className="flex">
       <div className="text">
-        Hello, I'm
-        <span className="highlight">Larry Olguin</span>
+        <span>Hello, I'm</span>
+        <span className="highlight"> Larry Olguin</span>
         <br />
-        I'm a full-stack web developer
+        <span>I'm a full-stack web developer</span>
       </div>
     </div>
     <Particles
