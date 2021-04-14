@@ -12,6 +12,7 @@ const Home = (props) => (
         <br />
         <span>I'm a full-stack web developer</span>
       </div>
+      <button className="btn-home">View My Work</button>
     </div>
     <Particles
       params={ParticlesOptions}

@@ -11,12 +11,13 @@ body {
 .home {
   height: 100vh;
   background-color: #240115;
+  text-align: center;
 }
 
 .flex {
   position: fixed;
-  top: 45%;
-  left: 40%;
+  top: 40%;
+  left: 37%;
 }
 
 .text {
@@ -24,14 +25,19 @@ body {
   font-size: 4rem;
 }
 
-.text span:nth-child(1) {
-  margin-left: 20px;
+.highlight {
+  font-weight: 700;
+  color: #DE3C4B;
+  /* font-size: 4.3rem; */
 }
 
 .btn-home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px;
+  display: inline;
 }
 
 .nav_links {
