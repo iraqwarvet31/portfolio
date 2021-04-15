@@ -72,10 +72,25 @@ body {
 
 .nav_links {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color:#e72e41;
+}
+
+.nav_links a {
+  text-decoration: none;
+}
+
+li {
+  padding: 0 40px;
+  list-style-type: none;
 }
 
 /* Tablet size */
-@media screen and (max-width: 600px) {
+/*//////////////////////////////////////////////////////////
+/* Intro text & button */
+@media screen and (max-width: 768px) {
   .text {
     font-size: 20pt;
     white-space: nowrap;
@@ -96,4 +111,24 @@ body {
     font-size: 7px;
     margin-left: 10px;
   }
+}
+
+/* Navbar Tablet size */
+@media only screen and (min-width: 768px) {
+  .nav_links { flex-direction: row; }
+}
+
+.about {
+  width: 500px;
+  height: 500px;
+}
+
+.portfolio {
+  width: 500px;
+  height: 500px;
+}
+
+.blog {
+  width: 500px;
+  height: 500px;
 }
