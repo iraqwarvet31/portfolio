@@ -23,9 +23,9 @@ body {
 
 .text {
   color: white;
-  font-size: 35pt;
+  font-size: 30pt;
   margin-bottom: 20px;
-  line-height: 40pt;
+  line-height: 32pt;
   white-space: nowrap;
 }
 
@@ -38,11 +38,11 @@ body {
   box-sizing: inherit;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
-  font-size: 20pt;
+  font-size: 15pt;
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
-  padding: 10px 20px;
+  padding: 7px 15px;
   display: inline;
   transition: all 0.3s ease-in-out;
 }
