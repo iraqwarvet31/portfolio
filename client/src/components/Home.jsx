@@ -8,11 +8,14 @@ const Home = (props) => (
     <div className="flex">
       <div className="text">
         <span>Hello, I'm</span>
-        <span className="highlight"> Larry Olguin</span>
+        <span className="highlight"> Larry Olguin.</span>
         <br />
-        <span>I'm a full-stack web developer</span>
+        <span>I'm a full-stack web developer.</span>
       </div>
-      <button className="btn-home">View My Work</button>
+      <button className="btn-home">
+        View my work
+        <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
     <Particles
       params={ParticlesOptions}
