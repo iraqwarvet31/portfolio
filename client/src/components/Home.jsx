@@ -1,14 +1,9 @@
 import React from 'react';
-import {
-  useHistory
-} from 'react-router-dom';
 
 import Particles from 'react-particles-js';
 import ParticlesOptions from '../../particles.json'
 
 const Home = (props) => {
-  const history = useHistory();
-
   return (
     <>
       <div className="home">
@@ -19,7 +14,7 @@ const Home = (props) => {
             <br />
             <span>I'm a full-stack web developer.</span>
           </div>
-          <button className="btn-home" onClick={() => history.push('/about')}>
+          <button className="btn-home">
             View my work
             <i className="fas fa-arrow-right"></i>
           </button>

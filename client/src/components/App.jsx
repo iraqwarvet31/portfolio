@@ -1,10 +1,4 @@
 import React from 'react';
-import {
-  Link,
-  BrowserRouter as Router,
-  Route,
-  Switch
-} from 'react-router-dom';
 
 import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
@@ -23,11 +17,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div style={styles.app}>
-        <Switch>
-          <Home />
-          <Route exact component={About} />
-        </Switch>
+      <div>
+        <Home />
+        <About />
+        <Portfolio />
+        <Blog />
       </div>
     )
   }
