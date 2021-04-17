@@ -26,24 +26,24 @@ body {
   color: white;
   font-size: 32pt;
   margin-bottom: 20px;
-  line-height: 32pt;
+  line-height: 35pt;
   white-space: nowrap;
 }
 
 .highlight {
   font-weight: 700;
-  color: #DE3C4B;
+  color: #e72e41;
 }
 
 .btn-home {
   box-sizing: inherit;
   font-family: 'Raleway', serif;
   font-weight: 400;
-  font-size: 17pt;
+  font-size: 16pt;
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
-  padding: 7px 15px;
+  padding: 11px 19px;
   display: inline;
   transition: all 0.3s ease-in-out;
 }
@@ -51,7 +51,7 @@ body {
 .btn-home:hover {
   background-color: #e72e41;
   border: none;
-  border: 2px solid #DE3C4B;
+  border: 2px solid #e72e41;
 }
 
 .btn-home:focus {
@@ -60,13 +60,13 @@ body {
 
 
 .fa-arrow-right {
-  margin-left: 15px;
-  font-size: 15px;
+  margin-left: 16px;
+  font-size: 12pt;
   transition: all 0.4s ease;
 }
 
 .btn-home:hover > i {
-  margin-left: 15px;
+  margin-left: 16px;
   font-size: 15px;
   transform: rotate(90deg);
 }
@@ -86,11 +86,11 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color:#240115;
-  font-size: 14pt;
   padding: 15px 0;
 }
 
 .nav_links li {
+  font-size: 14pt;
   color: #fff;
   cursor: pointer;
 }
@@ -130,12 +130,24 @@ li {
 @media only screen and (min-width: 768px) {
   .nav_links { flex-direction: row; }
 }
-
+/*////////////////////////////////////////////////////////////////////////*/
+/* About page */
 .about {
+  width: 100%;
   height: 100vh;
-  background-color: #f8f8f8;
+  text-align: center;
+  background-color: lightcoral;
 }
 
+.container {
+  display: inline-block;
+  width: 50%;
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 150px;
+  background-color: #e72e41;
+}
+/*///////////////////////////////////////////////////////////////////////*/
 .portfolio {
   height: 100vh;
   background-color: teal;

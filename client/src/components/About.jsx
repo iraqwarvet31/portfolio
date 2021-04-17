@@ -6,7 +6,9 @@ const About = (props) => {
   console.log('ran')
   return (
     <div className="about">
-      <h1>About page</h1>
+      <div className="container">
+        <h1>About page</h1>
+      </div>
     </div>
   )
 }
