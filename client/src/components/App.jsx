@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link, animateScroll as scroll} from 'react-scroll';
 
 import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
@@ -18,8 +19,14 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Home />
-        <About />
+        <Home
+          title="View my work"
+          id="home"
+        />
+        <About
+          title="About me"
+          id="about"
+        />
         <Portfolio />
         <Blog />
       </div>

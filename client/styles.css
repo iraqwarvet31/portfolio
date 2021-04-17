@@ -8,6 +8,12 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
+hr {
+  height: 2px;
+  background-color: #7F96FF;
+}
+
+/* Home page */
 .home {
   height: 100vh;
   background-color: #240115;
@@ -23,7 +29,7 @@ body {
 
 .text {
   color: white;
-  font-size: 30pt;
+  font-size: 35pt;
   margin-bottom: 20px;
   line-height: 32pt;
   white-space: nowrap;
@@ -38,7 +44,7 @@ body {
   box-sizing: inherit;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
-  font-size: 15pt;
+  font-size: 17pt;
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
@@ -59,15 +65,24 @@ body {
 
 
 .fa-arrow-right {
-  margin-left: 20px;
+  margin-left: 15px;
   font-size: 15px;
   transition: all 0.4s ease;
 }
 
 .btn-home:hover > i {
-  margin-left: 20px;
+  margin-left: 15px;
   font-size: 15px;
   transform: rotate(90deg);
+}
+
+/* About page */
+
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .nav_links {
@@ -75,11 +90,15 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color:#e72e41;
+  background-color:#3f292b;
+  font-size: 14pt;
+  padding: 15px 0;
 }
 
 .nav_links a {
+  font-weight: bold;
   text-decoration: none;
+  color: #fff;
 }
 
 li {
@@ -119,16 +138,16 @@ li {
 }
 
 .about {
-  width: 500px;
-  height: 500px;
+  height: 100vh;
+  background-color: #f8f8f8;
 }
 
 .portfolio {
-  width: 500px;
-  height: 500px;
+  height: 100vh;
+  background-color: teal;
 }
 
 .blog {
-  width: 500px;
-  height: 500px;
+  height: 100vh;
+  background-color: royalblue;
 }
