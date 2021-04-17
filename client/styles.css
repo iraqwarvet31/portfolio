@@ -8,12 +8,6 @@ body {
   font-family: 'Raleway', serif;
 }
 
-hr {
-  height: 3px;
-  border: none;
-  background-color: #ae1e2c;
-}
-
 /* Home page */
 .home {
   height: 100vh;
@@ -84,7 +78,6 @@ hr {
   width: 100%;
   top: 0;
   left: 0;
-  transition: top .6s;
 }
 
 .nav_links {

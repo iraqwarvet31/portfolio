@@ -19,7 +19,7 @@ const Home = ({showNavbar}) => {
           activeClass="active"
           to="about" spy={true}
           smooth={true}
-          duration={500}
+          duration={250}
         >
           <button className="btn-home">
             View my work

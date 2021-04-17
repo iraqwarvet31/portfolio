@@ -48,12 +48,8 @@ class Navbar extends React.Component {
             >
               <li>BLOG</li>
             </Link>
-            {/* <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">BLOG</a></li> */}
           </ul>
         </nav>
-        <hr />
       </div>
     )
   }
