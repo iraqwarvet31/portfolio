@@ -4,7 +4,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Particles from 'react-particles-js';
 import ParticlesOptions from '../../particles.json'
 
-const Home = ({scrollToBottom}) => {
+const Home = ({showNavbar}) => {
+
   return (
     <div className="home">
       <div className="flex">
@@ -14,7 +15,12 @@ const Home = ({scrollToBottom}) => {
           <br />
           <span>I'm a full-stack web developer.</span>
         </div>
-        <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
+        <Link
+          activeClass="active"
+          to="about" spy={true}
+          smooth={true}
+          duration={500}
+        >
           <button className="btn-home">
             View my work
             <i className="fas fa-arrow-right"></i>

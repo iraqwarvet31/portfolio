@@ -14,21 +14,31 @@ class App extends React.Component {
     this.state = {
 
     }
+
   }
 
   render() {
+
     return (
       <div>
+        <Navbar />
         <Home
           title="View my work"
           id="home"
+          showNavbar={this.showNavbar}
         />
         <About
           title="About me"
           id="about"
         />
-        <Portfolio />
-        <Blog />
+        <Portfolio
+          title="My projects"
+          id="portfolio"
+        />
+        <Blog
+          title="My articles"
+          id="blog"
+        />
       </div>
     )
   }

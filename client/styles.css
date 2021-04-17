@@ -5,12 +5,13 @@
 }
 
 body {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', serif;
 }
 
 hr {
-  height: 2px;
-  background-color: #7F96FF;
+  height: 3px;
+  border: none;
+  background-color: #ae1e2c;
 }
 
 /* Home page */
@@ -29,7 +30,7 @@ hr {
 
 .text {
   color: white;
-  font-size: 35pt;
+  font-size: 32pt;
   margin-bottom: 20px;
   line-height: 32pt;
   white-space: nowrap;
@@ -42,7 +43,7 @@ hr {
 
 .btn-home {
   box-sizing: inherit;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', serif;
   font-weight: 400;
   font-size: 17pt;
   color: #fff;
@@ -83,6 +84,7 @@ hr {
   width: 100%;
   top: 0;
   left: 0;
+  transition: top .6s;
 }
 
 .nav_links {
@@ -90,15 +92,14 @@ hr {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color:#3f292b;
+  background-color:#240115;
   font-size: 14pt;
   padding: 15px 0;
 }
 
-.nav_links a {
-  font-weight: bold;
-  text-decoration: none;
+.nav_links li {
   color: #fff;
+  cursor: pointer;
 }
 
 li {
