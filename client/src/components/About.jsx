@@ -69,21 +69,56 @@ const About = (props) => {
         </div>
 
         <div className="me-container flex">
-          <div className="profile-container">
-            <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/profile_humble.jpg" />
+          <div className="profile-container item">
+            <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/classic_profile_pic.jpg" />
             <div className="me-header">
               Who's this guy?
             </div>
             <div className="me-text">
               <span>I'm a Software Engineer living in Pismo Beach, CA.</span>
               <span> I have a serious passion for UI effects, animations and creating</span>
-              <span>intuitive, dynamic user experiences.</span>
+              <span> intuitive, dynamic user experiences.</span>
+              <br />
               <a href="#"> Let's make something special!</a>
             </div>
           </div>
-          <div className="badges-container">
+          <div className="badges-container item">
             <div className="bar">
-
+              <div className="fill">
+                <div className="tag flexSkill">
+                  JavaScript
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                90%
+              </div>
+            </div>
+            <div className="bar">
+              <div className="fill"></div>
+            </div>
+            <div className="bar">
+              <div className="fill"></div>
+            </div>
+            <div className="bar">
+              <div className="fill"></div>
+            </div>
+            <div className="bar">
+              <div className="fill"></div>
+            </div>
+            <div className="bar">
+              <div className="fill"></div>
+            </div>
+            <div className="bar">
+              <div className="fill"></div>
+            </div>
+            <div className="bar">
+              <div className="fill"></div>
+            </div>
+            <div className="bar">
+              <div className="fill"></div>
+            </div>
+            <div className="bar">
+              <div className="fill"></div>
             </div>
           </div>
         </div>

@@ -9,11 +9,11 @@ body {
 }
 
 hr {
-  width: 100px;
+  max-width: 75px;
   text-align: center;
   background-color: #000;
   border: 2px solid #000;
-  margin: 0 480px 0 497px;
+  margin: 0 510px 0 585px;
 }
 
 /* Home page */
@@ -86,7 +86,7 @@ hr {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav_links {
@@ -107,6 +107,11 @@ hr {
 li {
   padding: 0 40px;
   list-style-type: none;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  color: #e72e41;
 }
 
 /* Tablet size */
@@ -149,10 +154,9 @@ li {
 
 .container {
   display: inline-block;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1250px;
   margin-top: 100px;
-  padding: 0 50px 50px 50px;
+  padding: 0 0 50px 0;
 }
 
 .skills-container {
@@ -171,14 +175,15 @@ li {
 }
 
 .skill-description-container span {
+  line-height: 18pt;
   color: #616161;
 }
 
 .icon-container {
   width: 120px;
-  height: 100px;
+  height: 110px;
   margin: 0 auto;
-  background-color: #04c2c9;
+  background-color: #FF5964;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
@@ -200,12 +205,18 @@ li {
 
 .flex {
   display: flex;
-  flex-shrink: 2;
+}
+
+.flexSkill {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
   width: 300px;
-  height: 250px;
+  height: 240px;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
@@ -215,35 +226,91 @@ img {
 }
 
 .me-header {
-  font-size: 16pt;
+  font-size: 18pt;
   color: #616161;
   font-weight: 700;
-  padding: 10px 0;
+  padding: 25px 0;
 }
 
 .me-text span {
+  align-items: left;
   color: #616161;
+  line-height: 18pt;
 }
 
 .me-text a {
   text-decoration: none;
+  line-height: 18pt;
 }
 
 .profile-container {
-  padding: 0 130px 0;
+  padding: 0 102px 0;
 }
 
-.badges-container {
-  width: 100%;
-}
+/* .badges-container {
+
+} */
 
 .bar {
-  background-color: lightblue;
+  background-color: #FFE7E9;
+  width: 85%;
   height: 28px;
+  margin: 0 0 15px;
   position: relative;
 }
 
-/* skill bar */
+.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 28px;
+  background-color: #e72e41;
+  /*FF5964*/
+  z-index: 2;
+}
+
+.item {
+  flex-basis: 50%;
+  flex-grow: 0;
+  position: relative;
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 100%;
+  font-size: 11pt;
+  background-color: #FF5964;
+  z-index: 2;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* .bar span {
+  align-items: flex-end;
+} */
+
+.end-tag {
+  font-size: 11pt;
+  align-items: flex-end;
+  height: 100%;
+  padding-right: 15px;
+  line-height: 11pt;
+}
+
+/* .end-tag {
+  position: absolute;
+  top: 0;
+  left: 81.5%;
+  width: 100px;
+  height: 100%;
+  font-size: 11pt;
+  background-color: #FF5964;
+  z-index: 2;
+} */
 
 /*///////////////////////////////////////////////////////////////////////*/
 .portfolio {
