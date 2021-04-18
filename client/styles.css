@@ -8,6 +8,14 @@ body {
   font-family: 'Raleway', serif;
 }
 
+hr {
+  width: 100px;
+  text-align: center;
+  background-color: #000;
+  border: 2px solid #000;
+  margin: 0 480px 0 497px;
+}
+
 /* Home page */
 .home {
   height: 100vh;
@@ -15,7 +23,7 @@ body {
   text-align: center;
 }
 
-.flex {
+.position {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -71,13 +79,14 @@ body {
   transform: rotate(90deg);
 }
 
-/* About page */
+/* Navbar */
 
 .nav-wrapper {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .nav_links {
@@ -136,29 +145,106 @@ li {
   width: 100%;
   height: 100vh;
   text-align: center;
-  background-color: lightcoral;
 }
 
 .container {
   display: inline-block;
-  width: 50%;
-  height: 70%;
+  max-width: 1200px;
   margin: 0 auto;
-  margin-top: 150px;
-  background-color: #e72e41;
+  margin-top: 100px;
+  padding: 0 50px 50px 50px;
 }
 
-.skill-container {
-  width: 200px;
-  height: 400px;
-  background-color: lightgoldenrodyellow;
+.skills-container {
+  padding: 100px 0 0 0;
+}
+
+.skill-text-container {
+  font-size: 16pt;
+  color: #616161;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.skill-description-container {
+  font-size: 12pt;
+}
+
+.skill-description-container span {
+  color: #616161;
 }
 
 .icon-container {
-  width: 50px;
-  height: 50px;
-  background-color: blue;
+  width: 120px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #04c2c9;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
+
+.iconify {
+  height: 100%;
+  font-size: 40pt;
+  color: #fff;
+}
+
+.text-container {
+  padding: 0 20px;
+}
+
+.container h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #444649;
+}
+
+.flex {
+  display: flex;
+  flex-shrink: 2;
+}
+
+img {
+  width: 300px;
+  height: 250px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.me-container {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.me-header {
+  font-size: 16pt;
+  color: #616161;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.me-text span {
+  color: #616161;
+}
+
+.me-text a {
+  text-decoration: none;
+}
+
+.profile-container {
+  padding: 0 130px 0;
+}
+
+.badges-container {
+  width: 100%;
+}
+
+.bar {
+  background-color: lightblue;
+  height: 28px;
+  position: relative;
+}
+
+/* skill bar */
+
 /*///////////////////////////////////////////////////////////////////////*/
 .portfolio {
   height: 100vh;
@@ -169,3 +255,4 @@ li {
   height: 100vh;
   background-color: royalblue;
 }
+

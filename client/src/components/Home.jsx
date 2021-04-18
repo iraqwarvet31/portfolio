@@ -8,7 +8,7 @@ const Home = ({showNavbar}) => {
 
   return (
     <div className="home">
-      <div className="flex">
+      <div className="position">
         <div className="text">
           <span>Hello, I'm</span>
           <span className="highlight"> Larry Olguin.</span>
