@@ -271,6 +271,10 @@ img {
   background-color: #e72e41;
   /*FF5964*/
   z-index: 2;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .item {
@@ -292,23 +296,23 @@ img {
   font-weight: 700;
 }
 
-.fill-ninety {
+.ninety {
   width: 90%
 }
 
-.fill-eighty {
+.eighty {
   width: 80%;
 }
 
-.fill-seventy {
+.seventy {
   width: 70%;
 }
 
-.fill-sixty {
+.sixty {
   width: 60%;
 }
 
-.fill-fifty {
+.fifty {
   width: 50%;
 }
 
@@ -357,6 +361,7 @@ img {
 
 /* About */
 
+/*skills bounce and fade animations*/
 .delay-1 {
   animation-delay: 125ms;
 }
@@ -367,4 +372,94 @@ img {
 
 .delay-3 {
   animation-delay: 500ms;
+}
+
+/* Skills fill bar animations */
+.fill-ninety {
+  background-color: #e72e41;
+  -webkit-animation: ninetyBar 1s ease-in-out;
+  -webkit-animation-fill-mode:both;
+  -moz-animation: ninetyBar 1s ease-in-out;
+  -moz-animation-fill-mode:both;
+}
+
+@-webkit-keyframes ninetyBar {
+0% { width: 0; }
+100% { width: 90%; }
+}
+
+@keyframes ninetyBar {
+0% { width: 0; }
+100% { width: 90%; }
+}
+
+.fill-eighty {
+  background-color: #e72e41;
+  -webkit-animation: eightyBar 1s ease-in-out;
+  -webkit-animation-fill-mode:both;
+  -moz-animation: eightyBar 1s ease-in-out;
+  -moz-animation-fill-mode:both;
+}
+
+@-webkit-keyframes eightyBar {
+0% { width: 0; }
+100% { width: 80%; }
+}
+
+@keyframes eightyBar {
+0% { width: 0; }
+100% { width: 80%; }
+}
+.fill-seventy {
+  background-color: #e72e41;
+  -webkit-animation: seventyBar 1s ease-in-out;
+  -webkit-animation-fill-mode:both;
+  -moz-animation: seventyBar 1s ease-in-out;
+  -moz-animation-fill-mode:both;
+}
+
+@-webkit-keyframes seventyBar {
+0% { width: 0; }
+100% { width: 70%; }
+}
+
+@keyframes seventyBar {
+0% { width: 0; }
+100% { width: 70%; }
+}
+
+.fill-sixty {
+  background-color: #e72e41;
+  -webkit-animation: sixtyBar 1s ease-in-out;
+  -webkit-animation-fill-mode:both;
+  -moz-animation: sixtyBar 1s ease-in-out;
+  -moz-animation-fill-mode:both;
+}
+
+@-webkit-keyframes sixtyBar {
+0% { width: 0; }
+100% { width: 60%; }
+}
+
+@keyframes sixtyBar {
+0% { width: 0; }
+100% { width: 60%; }
+}
+
+.fill-fifty {
+  background-color: #e72e41;
+  -webkit-animation: fiftyBar 1s ease-in-out;
+  -webkit-animation-fill-mode:both;
+  -moz-animation: fiftyBar 1s ease-in-out;
+  -moz-animation-fill-mode:both;
+}
+
+@-webkit-keyframes fiftyBar {
+0% { width: 0; }
+100% { width: 50%; }
+}
+
+@keyframes fiftyBar {
+0% { width: 0; }
+100% { width: 50%; }
 }
