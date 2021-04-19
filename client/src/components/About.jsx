@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import 'animate.css';
 
 import Navbar from './Navbar.jsx'
 
 const About = (props) => {
-  console.log('ran')
+
+  const [isAnimated, setAnimated] = useState(false);
+
   return (
     <div className="about">
       <div className="container">
@@ -11,10 +14,10 @@ const About = (props) => {
         <hr />
         <div className="skills-container flex">
           <div className="skill-container">
-            <div className="icon-container">
+            <div className="icon-container animate__animated animate__flipInY">
               <span className="iconify" data-icon="mdi-speedometer" data-inline="false"></span>
             </div>
-            <div className="text-container">
+            <div className="text-container animate__fadeIn">
               <div className="skill-text-container">
                 Fast
               </div>
@@ -25,10 +28,10 @@ const About = (props) => {
             </div>
           </div>
           <div className="skill-container">
-            <div className="icon-container">
+            <div className="icon-container animate__animated animate__flipInY delay-1">
               <span className="iconify" data-icon="mdi:cellphone-link" data-inline="false"></span>
             </div>
-            <div className="text-container">
+            <div className="text-container animate__fadeIn delay-1">
               <div className="skill-text-container">
                 Responsive
               </div>
@@ -39,10 +42,10 @@ const About = (props) => {
             </div>
           </div>
           <div className="skill-container">
-            <div className="icon-container">
+            <div className="icon-container animate__animated animate__flipInY delay-2">
               <span className="iconify" data-icon="ic:outline-lightbulb" data-inline="false"></span>
             </div>
-            <div className="text-container">
+            <div className="text-container animate__fadeIn delay-2">
               <div className="skill-text-container">
                 Intuitive
               </div>
@@ -53,10 +56,10 @@ const About = (props) => {
             </div>
           </div>
           <div className="skill-container">
-            <div className="icon-container">
+            <div className="icon-container animate__animated animate__flipInY delay-3">
               <span className="iconify" data-icon="ic:sharp-dynamic-feed" data-inline="false"></span>
             </div>
-            <div className="text-container">
+            <div className="text-container animate__fadeIn delay-3">
               <div className="skill-text-container">
                 Dynamic
               </div>
