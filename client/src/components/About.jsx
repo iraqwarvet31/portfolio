@@ -84,7 +84,67 @@ const About = (props) => {
           </div>
           <div className="badges-container item">
             <div className="bar">
-              <div className="fill">
+              <div className="fill fill-eighty">
+                <div className="tag flexSkill">
+                  JavaScript
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                80%
+              </div>
+            </div>
+            <div className="bar">
+              <div className="fill fill-ninety">
+                <div className="tag flexSkill">
+                  HTML
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                90%
+              </div>
+            </div>
+            <div className="bar">
+              <div className="fill fill-ninety">
+                <div className="tag flexSkill">
+                  CSS
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                90%
+              </div>
+            </div>
+            <div className="bar">
+              <div className="fill fill-eighty">
+                <div className="tag flexSkill">
+                  React
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                80%
+              </div>
+            </div>
+            <div className="bar">
+              <div className="fill fill-seventy">
+                <div className="tag flexSkill">
+                  Node
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                70%
+              </div>
+            </div>
+            <div className="bar">
+              <div className="fill fill-sixty">
+                <div className="tag flexSkill">
+                  Mocha/Chai
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                60%
+              </div>
+            </div>
+            <div className="bar">
+              <div className="fill fill-ninety">
                 <div className="tag flexSkill">
                   JavaScript
                 </div>
@@ -94,31 +154,34 @@ const About = (props) => {
               </div>
             </div>
             <div className="bar">
-              <div className="fill"></div>
+              <div className="fill fill-fifty">
+                <div className="tag flexSkill">
+                  Postgresql
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                50%
+              </div>
             </div>
             <div className="bar">
-              <div className="fill"></div>
+              <div className="fill fill-eighty">
+                <div className="tag flexSkill">
+                  MongoDB
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                80%
+              </div>
             </div>
             <div className="bar">
-              <div className="fill"></div>
-            </div>
-            <div className="bar">
-              <div className="fill"></div>
-            </div>
-            <div className="bar">
-              <div className="fill"></div>
-            </div>
-            <div className="bar">
-              <div className="fill"></div>
-            </div>
-            <div className="bar">
-              <div className="fill"></div>
-            </div>
-            <div className="bar">
-              <div className="fill"></div>
-            </div>
-            <div className="bar">
-              <div className="fill"></div>
+              <div className="fill fill-fifty">
+                <div className="tag flexSkill">
+                  AWS
+                </div>
+              </div>
+              <div className="end-tag flexSkill">
+                50%
+              </div>
             </div>
           </div>
         </div>

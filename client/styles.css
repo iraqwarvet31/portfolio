@@ -263,7 +263,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
   height: 28px;
   background-color: #e72e41;
   /*FF5964*/
@@ -287,6 +286,26 @@ img {
   z-index: 2;
   color: #fff;
   font-weight: 700;
+}
+
+.fill-ninety {
+  width: 90%
+}
+
+.fill-eighty {
+  width: 80%;
+}
+
+.fill-seventy {
+  width: 70%;
+}
+
+.fill-sixty {
+  width: 60%;
+}
+
+.fill-fifty {
+  width: 50%;
 }
 
 /* .bar span {
