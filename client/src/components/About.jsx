@@ -70,7 +70,7 @@ const About = (props) => {
 
         <div className="me-container flex">
           <div className="profile-container item">
-            <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/classic_profile_pic.jpg" />
+            <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/20210418_180012.jpg" />
             <div className="me-header">
               Who's this guy?
             </div>
