@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
-
-
+import { Link } from "react-scroll";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -15,7 +13,6 @@ class Navbar extends React.Component {
   render() {
 
     return (
-
       <div>
         <nav className="nav-wrapper">
           <ul className="nav_links">

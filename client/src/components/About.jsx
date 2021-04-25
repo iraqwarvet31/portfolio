@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-
 import Navbar from './Navbar.jsx'
 
 const About = (props) => {
