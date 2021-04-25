@@ -33,7 +33,7 @@ class App extends React.Component {
         />
         <Portfolio
           title="My projects"
-          id="portfolio"
+          id="styles.portfolio"
         />
         <Blog
           title="My articles"
