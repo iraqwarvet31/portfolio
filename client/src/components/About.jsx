@@ -6,8 +6,6 @@ import Navbar from './Navbar.jsx'
 
 const About = (props) => {
 
-  const [isAnimated, setAnimated] = useState(false);
-
   return (
     <div className="about">
       <div className="container">
