@@ -7,24 +7,24 @@ import Navbar from './Navbar.jsx'
 const About = (props) => {
 
   return (
-    <div className="about">
-      <div className="container">
+    <div id="about" className={styles.about}>
+      <div className={styles.container}>
         <h1>ABOUT</h1>
         <hr />
-        <div className="skills-container flex">
-          <div className="skill-container">
+        <div className={`${styles.skillsContainer} ${styles.flex}`}>
+          <div>
             <ScrollAnimation animateIn="animate__animated animate__flipInY">
-              <div className="icon-container">
-                <span className="iconify" data-icon="mdi-speedometer" data-inline="false"></span>
+              <div className={styles.iconContainer}>
+                <span className={`${styles.iconify} iconify`} data-icon="mdi-speedometer" data-inline="false"></span>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn="animate__fadeIn">
-              <div className="text-container">
-                <div className="skill-text-container">
+              <div className={styles.textContainer}>
+                <div className={styles.skillTextContainer}>
                   Fast
                 </div>
-                <div className="skill-description-container">
+                <div className={styles.descriptionContainer}>
                   <span>Fast load times and lag free</span>
                   <span> interaction, my highest priority.</span>
                 </div>
@@ -32,19 +32,19 @@ const About = (props) => {
             </ScrollAnimation>
           </div>
 
-          <div className="skill-container">
-            <ScrollAnimation animateIn="animate__animated animate__flipInY delay-1">
-              <div className="icon-container">
-                <span className="iconify" data-icon="mdi:cellphone-link" data-inline="false"></span>
+          <div>
+            <ScrollAnimation animateIn={`animate__animated animate__flipInY ${styles.delay1}`}>
+              <div className={styles.iconContainer}>
+                <span className={`${styles.iconify} iconify`} data-icon="mdi:cellphone-link" data-inline="false"></span>
               </div>
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn="animate__fadeIn delay-1">
-              <div className="text-container">
-                <div className="skill-text-container">
+            <ScrollAnimation animateIn={`animate__fadeIn ${styles.delay1}`}>
+              <div className={styles.textContainer}>
+                <div className={styles.skillTextContainer}>
                   Responsive
                 </div>
-                <div className="skill-description-container">
+                <div className={styles.descriptionContainer}>
                   <span>My layouts will work on any</span>
                   <span> device, big or small.</span>
                 </div>
@@ -52,19 +52,19 @@ const About = (props) => {
             </ScrollAnimation>
           </div>
 
-          <div className="skill-container">
-            <ScrollAnimation animateIn="animate__animated animate__flipInY delay-2">
-              <div className="icon-container">
-                <span className="iconify" data-icon="ic:outline-lightbulb" data-inline="false"></span>
+          <div>
+            <ScrollAnimation animateIn={`animate__animated animate__flipInY ${styles.delay2}`}>
+              <div className={styles.iconContainer}>
+                <span className={`${styles.iconify} iconify`} data-icon="ic:outline-lightbulb" data-inline="false"></span>
               </div>
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn="animate__fadeIn delay-2">
-              <div className="text-container">
-                <div className="skill-text-container">
+            <ScrollAnimation animateIn={`animate__fadeIn ${styles.delay2}`}>
+              <div className={styles.textContainer}>
+                <div className={styles.skillTextContainer}>
                   Intuitive
                 </div>
-                <div className="skill-description-container">
+                <div className={styles.descriptionContainer}>
                   <span>Strong preference for easy to</span>
                   <span> use, intuitive UX/UI</span>
                 </div>
@@ -72,19 +72,19 @@ const About = (props) => {
             </ScrollAnimation>
           </div>
 
-          <div className="skill-container">
-            <ScrollAnimation animateIn="animate__animated animate__flipInY delay-3">
-              <div className="icon-container">
-                <span className="iconify" data-icon="ic:sharp-dynamic-feed" data-inline="false"></span>
+          <div>
+            <ScrollAnimation animateIn={`animate__animated animate__flipInY ${styles.delay3}`}>
+              <div className={styles.iconContainer}>
+                <span className={`${styles.iconify} iconify`} data-icon="ic:sharp-dynamic-feed" data-inline="false"></span>
               </div>
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn="animate__fadeIn delay-3">
-              <div className="text-container">
-                <div className="skill-text-container">
+            <ScrollAnimation animateIn={`animate__fadeIn ${styles.delay3}`}>
+              <div className={styles.textContainer}>
+                <div className={styles.skillTextContainer}>
                   Dynamic
                 </div>
-                <div className="skill-description-container">
+                <div className={styles.descriptionContainer}>
                   <span>Websites don't have to be static, I love</span>
                   <span> making pages come to life.</span>
                 </div>
@@ -93,13 +93,13 @@ const About = (props) => {
           </div>
         </div>
 
-        <div className="me-container flex">
-          <div className="profile-container item">
+        <div className={`${styles.meContainer} ${styles.flex}`}>
+          <div className={`${styles.profileContainer} ${styles.item}`}>
             <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/20210418_180012.jpg" />
-            <div className="me-header">
+            <div className={styles.meHeader}>
               Who's this guy?
             </div>
-            <div className="me-text">
+            <div className={styles.meText}>
               <span>I'm a Software Engineer living in Pismo Beach, CA.</span>
               <span> I have a serious passion for UI effects, animations and creating</span>
               <span> intuitive, dynamic user experiences.</span>
@@ -107,133 +107,133 @@ const About = (props) => {
               <a href="#"> Let's make something special!</a>
             </div>
           </div>
-          <div className="badges-container item">
-            <div className="bar">
-              <ScrollAnimation animateIn="fill-eighty fill eighty">
+          <div className={styles.item}>
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillEighty} ${styles.fill} ${styles.eighty}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     JavaScript
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 80%
               </div>
             </div>
 
-            <div className="bar">
-              <ScrollAnimation animateIn="fill ninety fill-ninety">
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillNinety} ${styles.fill} ${styles.ninety}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     HTML
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 90%
               </div>
             </div>
 
-            <div className="bar">
-              <ScrollAnimation animateIn="fill ninety fill-ninety">
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillNinety} ${styles.fill} ${styles.ninety}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     CSS
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 90%
               </div>
             </div>
 
-            <div className="bar">
-              <ScrollAnimation animateIn="fill eighty fill-eighty">
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillEighty} ${styles.fill} ${styles.eighty}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     React
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 80%
               </div>
             </div>
 
-            <div className="bar">
-              <ScrollAnimation animateIn="fill seventy fill-seventy">
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillSeventy} ${styles.fill} ${styles.seventy}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     Node
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 70%
               </div>
             </div>
 
-            <div className="bar">
-              <ScrollAnimation animateIn="fill sixty fill-sixty">
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillSixty} ${styles.fill} ${styles.sixty}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     Mocha/Chai
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 60%
               </div>
             </div>
 
-            <div className="bar">
-              <ScrollAnimation animateIn="fill ninety fill-ninety">
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillNinety} ${styles.fill} ${styles.ninety}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     JavaScript
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 90%
               </div>
             </div>
 
-            <div className="bar">
-              <ScrollAnimation animateIn="fill fifty fill-fifty">
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillFifty} ${styles.fill} ${styles.fifty}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     Postgresql
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 50%
               </div>
             </div>
 
-            <div className="bar">
-              <ScrollAnimation animateIn="fill eighty fill-eighty">
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillEighty} ${styles.fill} ${styles.eighty}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     MongoDB
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 80%
               </div>
             </div>
 
-            <div className="bar">
-              <ScrollAnimation animateIn="fill fifty fill-fifty">
+            <div className={styles.bar}>
+              <ScrollAnimation animateIn={`${styles.fillFifty} ${styles.fill} ${styles.fifty}`}>
                 <div>
-                  <div className="tag flexSkill">
+                  <div className={`${styles.tag} ${styles.flexSkill}`}>
                     AWS
                   </div>
                 </div>
               </ScrollAnimation>
-              <div className="end-tag flexSkill">
+              <div className={`${styles.endTag} ${styles.flexSkill}`}>
                 50%
               </div>
             </div>
