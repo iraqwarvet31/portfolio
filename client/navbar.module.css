@@ -1,0 +1,38 @@
+.navWrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color:#240115;
+  padding: 15px 0;
+}
+
+.navLinks li {
+  font-size: 14pt;
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  padding: 0 40px;
+  list-style-type: none;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  color: #e72e41;
+}
+
+
+/* Navbar Tablet size */
+@media only screen and (min-width: 768px) {
+  .navLinks { flex-direction: row; }
+}

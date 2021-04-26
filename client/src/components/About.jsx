@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../about.module.css'
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Navbar from './Navbar.jsx'

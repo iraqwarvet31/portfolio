@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../navbar.module.css'
 import { Link } from "react-scroll";
 
 class Navbar extends React.Component {
@@ -14,8 +15,8 @@ class Navbar extends React.Component {
 
     return (
       <div>
-        <nav className="nav-wrapper">
-          <ul className="nav_links">
+        <nav className={styles.navWrapper}>
+          <ul className={styles.navLinks}>
             <Link
               activeClass="active"
               to="home" spy={true}

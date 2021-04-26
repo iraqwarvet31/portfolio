@@ -59,3 +59,27 @@
   font-size: 15px;
   transform: rotate(90deg);
 }
+
+/* Mobile size*/
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 20pt;
+    white-space: nowrap;
+    line-height: 20pt;
+  }
+
+  .btnHome {
+    font-size:7px;
+    padding: 5px 10px;
+  }
+
+  .btnHome:hover > i {
+    margin-left: 10px;
+    font-size: 7px;
+  }
+
+  .fa-arrow-right {
+    font-size: 7px;
+    margin-left: 10px;
+  }
+}
