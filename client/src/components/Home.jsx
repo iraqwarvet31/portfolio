@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../home.module.css'
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import Particles from 'react-particles-js';
@@ -7,11 +8,11 @@ import ParticlesOptions from '../../particles.json'
 const Home = ({showNavbar}) => {
 
   return (
-    <div className="home">
-      <div className="position">
-        <div className="text">
+    <div id="home" className={styles.home}>
+      <div className={styles.position}>
+        <div className={styles.text}>
           <span>Hello, I'm</span>
-          <span className="highlight"> Larry Olguin.</span>
+          <span className={styles.highlight}> Larry Olguin.</span>
           <br />
           <span>I'm a full-stack web developer.</span>
         </div>
@@ -21,7 +22,7 @@ const Home = ({showNavbar}) => {
           smooth={true}
           duration={250}
         >
-          <button className="btn-home">
+          <button className={styles.btnHome}>
             View my work
             <i className="fas fa-arrow-right"></i>
           </button>

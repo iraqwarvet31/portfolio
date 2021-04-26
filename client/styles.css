@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Raleway', serif;
+  background-color: #fff;
 }
 
 hr {
@@ -17,67 +18,11 @@ hr {
 }
 
 /* Home page */
-.home {
-  height: 100vh;
-  background-color: #240115;
-  text-align: center;
-}
-
-.position {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.text {
-  color: white;
-  font-size: 32pt;
-  margin-bottom: 20px;
-  line-height: 35pt;
-  white-space: nowrap;
-}
-
-.highlight {
-  font-weight: 700;
-  color: #e72e41;
-}
-
-.btn-home {
-  box-sizing: inherit;
-  font-family: 'Raleway', serif;
-  font-weight: 400;
-  font-size: 16pt;
-  color: #fff;
-  background-color: transparent;
-  border: 2px solid #fff;
-  padding: 11px 19px;
-  display: inline;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-home:hover {
-  background-color: #e72e41;
-  border: none;
-  border: 2px solid #e72e41;
-}
-
-.btn-home:focus {
-  outline: none;
-}
 
 
-.fa-arrow-right {
-  margin-left: 16px;
-  font-size: 12pt;
-  transition: all 0.4s ease;
-}
 
-.btn-home:hover > i {
-  margin-left: 16px;
-  font-size: 15px;
-  transform: rotate(90deg);
-}
+
+
 
 /* Navbar */
 
@@ -218,7 +163,7 @@ li:hover {
   justify-content: center;
 }
 
-img {
+.profile-container img {
   width: 300px;
   height: 240px;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
