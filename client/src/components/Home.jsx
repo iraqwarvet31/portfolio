@@ -24,7 +24,7 @@ const Home = ({showNavbar}) => {
         >
           <button className={styles.btnHome}>
             View my work
-            <i className="fas fa-arrow-right"></i>
+            <i className={`fas fa-arrow-right ${styles.faArrowRight}`}></i>
           </button>
         </Link>
       </div>

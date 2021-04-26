@@ -4,7 +4,7 @@ import styles from '../../portfolio.module.css';
 const Portfolio = (props) => (
   <div id="portfolio" className={styles.portfolio}>
     <div className={styles.container}>
-      <h1>Portfolio page</h1>
+      <h1>PORTFOLIO</h1>
       <hr />
       <div className={styles.projects}>
         <div className="image">

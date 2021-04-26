@@ -2,6 +2,7 @@
   height: 100vh;
   background-color: #240115;
   text-align: center;
+  /* clip-path: polygon(0 0, 100% 0, 100% 1000px, 0 100%) */
 }
 
 .position {
@@ -48,7 +49,7 @@
 }
 
 
-.fa-arrow-right {
+.faArrowRight {
   margin-left: 16px;
   font-size: 12pt;
   transition: all 0.4s ease;
@@ -78,7 +79,7 @@
     font-size: 7px;
   }
 
-  .fa-arrow-right {
+  .faArrowRight {
     font-size: 7px;
     margin-left: 10px;
   }
