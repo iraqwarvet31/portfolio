@@ -10,7 +10,7 @@ const About = (props) => {
     <div id="about" className={styles.about}>
       <div className={styles.container}>
         <h1>ABOUT</h1>
-        <hr />
+        <hr className={styles.heading}/>
         <div className={`${styles.skillsContainer} ${styles.flex}`}>
           <div>
             <ScrollAnimation animateIn="animate__animated animate__flipInY">

@@ -1,14 +1,14 @@
-hr {
-  max-width: 75px;
+.heading {
+  max-width: 50px;
   text-align: center;
   background-color: #000;
   border: 2px solid #000;
-  margin: 0 510px 0 585px;
+  margin: 20px 0 0 603px;
 }
 
 .about {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   text-align: center;
   background-color: #fff;
 }
@@ -132,8 +132,8 @@ hr {
   background-color: #e72e41;
   /*FF5964*/
   z-index: 2;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -206,12 +206,15 @@ hr {
   animation-delay: 500ms;
 }
 
+.delay4 {
+  animation-delay: 2s;
+}
 /* Skills fill bar animations */
 .fillNinety {
   background-color: #e72e41;
-  -webkit-animation: ninetyBar 1s ease-in-out;
-  -webkit-animation-fill-mode:both;
-  -moz-animation: ninetyBar 1s ease-in-out;
+  -webkit-animation: ninetyBar 2000ms ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation: ninetyBar 2000ms ease-in-out;
   -moz-animation-fill-mode:both;
 }
 
@@ -227,9 +230,9 @@ hr {
 
 .fillEighty {
   background-color: #e72e41;
-  -webkit-animation: eightyBar 1s ease-in-out;
+  -webkit-animation: eightyBar 2000ms ease-in-out;
   -webkit-animation-fill-mode:both;
-  -moz-animation: eightyBar 1s ease-in-out;
+  -moz-animation: eightyBar 2000ms ease-in-out;
   -moz-animation-fill-mode:both;
 }
 
@@ -244,10 +247,11 @@ hr {
 }
 .fillSeventy {
   background-color: #e72e41;
-  -webkit-animation: seventyBar 1s ease-in-out;
+  -webkit-animation: seventyBar 2000ms ease-in-out;
   -webkit-animation-fill-mode:both;
-  -moz-animation: seventyBar 1s ease-in-out;
+  -moz-animation: seventyBar 2000ms ease-in-out;
   -moz-animation-fill-mode:both;
+  animation-delay: 100ms;
 }
 
 @-webkit-keyframes seventyBar {
@@ -262,10 +266,11 @@ hr {
 
 .fillSixty {
   background-color: #e72e41;
-  -webkit-animation: sixtyBar 1s ease-in-out;
+  -webkit-animation: sixtyBar 2000ms ease-in-out;
   -webkit-animation-fill-mode:both;
-  -moz-animation: sixtyBar 1s ease-in-out;
+  -moz-animation: sixtyBar 2000ms ease-in-out;
   -moz-animation-fill-mode:both;
+  animation-delay: 250ms;
 }
 
 @-webkit-keyframes sixtyBar {
@@ -280,10 +285,11 @@ hr {
 
 .fillFifty {
   background-color: #e72e41;
-  -webkit-animation: fiftyBar 1s ease-in-out;
+  -webkit-animation: fiftyBar 2000ms ease-in-out;
   -webkit-animation-fill-mode:both;
-  -moz-animation: fiftyBar 1s ease-in-out;
+  -moz-animation: fiftyBar 2000ms ease-in-out;
   -moz-animation-fill-mode:both;
+  animation-delay: 500ms;
 }
 
 @-webkit-keyframes fiftyBar {

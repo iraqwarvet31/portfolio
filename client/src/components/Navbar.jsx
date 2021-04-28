@@ -21,7 +21,7 @@ class Navbar extends React.Component {
               activeClass="active"
               to="home" spy={true}
               smooth={true}
-              duration={500}
+              duration={250}
             >
               <li>HOME</li>
             </Link>
@@ -29,7 +29,7 @@ class Navbar extends React.Component {
               activeClass="active"
               to="about" spy={true}
               smooth={true}
-              duration={500}
+              duration={250}
             >
               <li>ABOUT</li>
             </Link>
@@ -37,7 +37,7 @@ class Navbar extends React.Component {
               activeClass="active"
               to="portfolio" spy={true}
               smooth={true}
-              duration={500}
+              duration={250}
             >
               <li>PORTFOLIO</li>
             </Link>
@@ -45,7 +45,7 @@ class Navbar extends React.Component {
               activeClass="active"
               to="blog" spy={true}
               smooth={true}
-              duration={500}
+              duration={250}
             >
               <li>BLOG</li>
             </Link>
