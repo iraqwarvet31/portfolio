@@ -17,7 +17,7 @@ const Portfolio = (props) => (
           <div className={styles.card__overlay}>
             <div className={styles.overlay__text}>
               <div>Retroflix</div>
-              <span>JavaScript / Node / EJS</span>
+              <span>JavaScript/Node/EJS</span>
               <button className={styles.btn__more}>LEARN MORE</button>
             </div>
           </div>
@@ -31,8 +31,8 @@ const Portfolio = (props) => (
           />
           <div className={styles.card__overlay}>
             <div className={styles.overlay__text}>
-              <div>Retroflix</div>
-              <span>JavaScript / Node / EJS</span>
+              <div>Home Finder</div>
+              <span>React/Puppeteer/MongoDB</span>
               <button className={styles.btn__more}>LEARN MORE</button>
             </div>
           </div>
@@ -46,8 +46,8 @@ const Portfolio = (props) => (
           />
           <div className={styles.card__overlay}>
             <div className={styles.overlay__text}>
-              <div>Retroflix</div>
-              <span>JavaScript / Node / EJS</span>
+              <div>Croxy back-end</div>
+              <span>Postgresql/Node/Nginx/AWS</span>
               <button className={styles.btn__more}>LEARN MORE</button>
             </div>
           </div>
@@ -61,8 +61,8 @@ const Portfolio = (props) => (
           />
           <div className={styles.card__overlay}>
             <div className={styles.overlay__text}>
-              <div>Retroflix</div>
-              <span>JavaScript / Node / EJS</span>
+              <div>Croxy front-end</div>
+              <span>React/Node/Mongodb/Docker</span>
               <button className={styles.btn__more}>LEARN MORE</button>
             </div>
           </div>
