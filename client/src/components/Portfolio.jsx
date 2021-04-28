@@ -8,35 +8,63 @@ const Portfolio = (props) => (
       <hr className={styles.heading}/>
       <div className={styles.projects}>
         <div className={styles.card}>
-          <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/retroflixScaled-390-5.png" alt=""/>
-          <div className="card__overlay">
-            <h3>Project Name</h3>
-            <p>Description</p>
-            <button>See More</button>
+          <img
+            src="https://portfolioprofile.s3-us-west-1.amazonaws.com/retroflixScaled-390-5.png"
+            alt=""
+            className={styles.card__image}
+
+          />
+          <div className={styles.card__overlay}>
+            <div className={styles.overlay__text}>
+              <div>Retroflix</div>
+              <span>JavaScript / Node / EJS</span>
+              <button className={styles.btn__more}>LEARN MORE</button>
+            </div>
           </div>
         </div>
         <div className={styles.card}>
-          <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/puppeteerScaled-390.jpg" alt=""/>
-          <div className="card__overlay">
-            <h3>Project Name</h3>
-            <p>Description</p>
-            <button>See More</button>
+          <img
+            src="https://portfolioprofile.s3-us-west-1.amazonaws.com/puppeteerScaled-390.jpg"
+            alt=""
+            className={styles.card__image}
+
+          />
+          <div className={styles.card__overlay}>
+            <div className={styles.overlay__text}>
+              <div>Retroflix</div>
+              <span>JavaScript / Node / EJS</span>
+              <button className={styles.btn__more}>LEARN MORE</button>
+            </div>
           </div>
         </div>
         <div className={styles.card}>
-          <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/scale-390.jpg" alt=""/>
-          <div className="card__overlay">
-            <h3>Project Name</h3>
-            <p>Description</p>
-            <button>See More</button>
+          <img
+            src="https://portfolioprofile.s3-us-west-1.amazonaws.com/scale-390.jpg"
+            alt=""
+            className={styles.card__image}
+
+          />
+          <div className={styles.card__overlay}>
+            <div className={styles.overlay__text}>
+              <div>Retroflix</div>
+              <span>JavaScript / Node / EJS</span>
+              <button className={styles.btn__more}>LEARN MORE</button>
+            </div>
           </div>
         </div>
         <div className={styles.card}>
-          <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/starsScaled-390.jpeg" alt=""/>
-          <div className="card__overlay">
-            <h3>Project Name</h3>
-            <p>Description</p>
-            <button>See More</button>
+          <img
+            src="https://portfolioprofile.s3-us-west-1.amazonaws.com/starsScaled-390.jpeg"
+            alt=""
+            className={styles.card__image}
+
+          />
+          <div className={styles.card__overlay}>
+            <div className={styles.overlay__text}>
+              <div>Retroflix</div>
+              <span>JavaScript / Node / EJS</span>
+              <button className={styles.btn__more}>LEARN MORE</button>
+            </div>
           </div>
         </div>
       </div>
