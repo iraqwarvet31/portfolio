@@ -1,0 +1,12 @@
+.modal_container {
+  position: absolute;
+  width: 600px;
+  background: #ffffff;
+  left: 40%;
+  top: 150%;
+  padding: 20px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, .6) !important;
+}

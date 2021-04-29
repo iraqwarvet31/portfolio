@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../portfolio.module.css';
 
-const Portfolio = (props) => (
+const Portfolio = ({showModal}) => (
   <div id="portfolio" className={styles.portfolio}>
     <div className={styles.container}>
       <h1>PORTFOLIO</h1>
@@ -18,7 +18,7 @@ const Portfolio = (props) => (
             <div className={styles.overlay__text}>
               <div>Retroflix</div>
               <span>JavaScript/Node/EJS</span>
-              <button className={styles.btn__more}>LEARN MORE</button>
+              <button className={styles.btn__more} onClick={showModal}>LEARN MORE</button>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Portfolio = (props) => (
             <div className={styles.overlay__text}>
               <div>Home Finder</div>
               <span>React/Puppeteer/MongoDB</span>
-              <button className={styles.btn__more}>LEARN MORE</button>
+              <button className={styles.btn__more} onClick={showModal}>LEARN MORE</button>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ const Portfolio = (props) => (
             <div className={styles.overlay__text}>
               <div>Croxy back-end</div>
               <span>Postgresql/Node/Nginx/AWS</span>
-              <button className={styles.btn__more}>LEARN MORE</button>
+              <button className={styles.btn__more} onClick={showModal}>LEARN MORE</button>
             </div>
           </div>
         </div>
@@ -63,12 +63,13 @@ const Portfolio = (props) => (
             <div className={styles.overlay__text}>
               <div>Croxy front-end</div>
               <span>React/Node/Mongodb/Docker</span>
-              <button className={styles.btn__more}>LEARN MORE</button>
+              <button className={styles.btn__more} onClick={showModal}>LEARN MORE</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <button className="btn btn-danger">TEST BTN</button>
   </div>
 )
 

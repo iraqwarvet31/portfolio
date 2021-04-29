@@ -13,7 +13,7 @@ const About = (props) => {
         <hr className={styles.heading}/>
         <div className={`${styles.skillsContainer} ${styles.flex}`}>
           <div>
-            <ScrollAnimation animateIn="animate__animated animate__flipInY">
+            <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY}`}>
               <div className={styles.iconContainer}>
                 <span className={`${styles.iconify} iconify`} data-icon="mdi-speedometer" data-inline="false"></span>
               </div>
@@ -33,7 +33,7 @@ const About = (props) => {
           </div>
 
           <div>
-            <ScrollAnimation animateIn={`animate__animated animate__flipInY ${styles.delay1}`}>
+            <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY} ${styles.delay1}`}>
               <div className={styles.iconContainer}>
                 <span className={`${styles.iconify} iconify`} data-icon="mdi:cellphone-link" data-inline="false"></span>
               </div>
@@ -53,7 +53,7 @@ const About = (props) => {
           </div>
 
           <div>
-            <ScrollAnimation animateIn={`animate__animated animate__flipInY ${styles.delay2}`}>
+            <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY} ${styles.delay2}`}>
               <div className={styles.iconContainer}>
                 <span className={`${styles.iconify} iconify`} data-icon="ic:outline-lightbulb" data-inline="false"></span>
               </div>
@@ -73,7 +73,7 @@ const About = (props) => {
           </div>
 
           <div>
-            <ScrollAnimation animateIn={`animate__animated animate__flipInY ${styles.delay3}`}>
+            <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY} ${styles.delay3}`}>
               <div className={styles.iconContainer}>
                 <span className={`${styles.iconify} iconify`} data-icon="ic:sharp-dynamic-feed" data-inline="false"></span>
               </div>
