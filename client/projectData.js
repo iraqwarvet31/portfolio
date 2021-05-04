@@ -1,23 +1,42 @@
 const projectData = [
   {
-    title: "Latin literature",
-    subTitle: "not simply random",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus fringilla elit semper pretium. Vivamus varius arcu sed purus convallis blandit. Vivamus malesuada mi at luctus aliquet. Duis vitae eros.`
+    title: "Retroflix",
+    urls: [
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/authenticationScaled-700.png',
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/homeNew700.png',
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/video_retroflixScaled-700.png',
+    ],
+    subTitle: "Video streaming platform",
+    description: `Retroflix is a video streaming application for older movies and one of my passion projects. I became tired of having to switch from one streaming platform to the other to find my favorite older movies.`
   },
   {
-    title: "dolorem ipsum",
-    subTitle: "ipsum dolor",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec consectetur velit, sed bibendum eros. Etiam eget euismod lorem. Sed egestas imperdiet libero id pharetra. Donec in gravida quam, sed.`
+    title: "Home Finder",
+    urls: [
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/scrape700.png',
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/scrape7002.png',
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/scrape7003.png',
+    ],
+    subTitle: "Web scraping service",
+    description: `Home Finder is a bot that pulls user defined data from a popular home finding web service. App was modeled in such to save the user time from having to browse page by page and can view all results on 1 page in a tabular format.`
   },
   {
-    title: "gravida quis",
-    subTitle: "consectetur adipiscing elit",
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non semper turpis. Praesent malesuada facilisis metus, ut congue mauris congue id. Nunc ornare malesuada suscipit. Maecenas maximus lacinia viverra. Integer.'
+    title: "Croxy front-end",
+    urls: [
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/sortReviewsScaled750.png',
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/reviews_paginationScaled700.png',
+    ],
+    subTitle: "E-commerce product service",
+    description: 'Croxy is a product item page built with service-oriented architecture. Developed a customer reviews component with pagination, using React, that allows users to switch between viewing 4 reviews at a time.'
   },
   {
-    title: "Aenean tristique",
-    subTitle: "nec mauris",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique justo tortor, id finibus urna pellentesque quis. Maecenas imperdiet augue sed magna fringilla, ut dictum mauris ornare. Integer rutrum nisl.`
+    title: "Croxy back-end",
+    urls: [
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/croxyfe700.png',
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/Croxy_projectScaled-700.png',
+      'https://portfolioprofile.s3-us-west-1.amazonaws.com/croxyScaled700.png',
+    ],
+    subTitle: "System design makeover",
+    description: `Re-designed the back end infrastructure of an already existing e-commerce application that is capable of handling over 107,000 clients per minute with a low latency of 65ms.`
   },
 ]
 

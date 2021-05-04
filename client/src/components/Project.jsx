@@ -1,13 +1,19 @@
 import React from 'react';
 import styles from '../../project.module.css';
 
-const Project = (props) => {
+const Project = ({ activeProject, projectData }) => {
+  const selectedProject = projectData
+    .filter(e => e.title === activeProject);
+
+  console.log(selectedProject)
   return (
     <div className={styles.card}>
-      <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/homeNew700.png" alt=""/>
+      <img src={selectedProject[0].urls[0]} alt=""/>
+      <hr />
       <div className="card_details">
-        <h3>Retroflix streaming solutions</h3>
-        <p>Retroflix is a video streaming service for those who enjoy older movies.</p>
+        <h3>{selectedProject[0].title}</h3>
+        <h4>{selectedProject[0].subTitle}</h4>
+        <p>{selectedProject[0].description}</p>
       </div>
     </div>
   )

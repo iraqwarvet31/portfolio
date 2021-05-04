@@ -18,7 +18,7 @@ const Portfolio = ({showModal}) => (
             <div className={styles.overlay__text}>
               <div>Retroflix</div>
               <span>JavaScript/Node/EJS</span>
-              <button className={styles.btn__more} onClick={showModal}>LEARN MORE</button>
+              <button className={styles.btn__more} name="Retroflix" onClick={showModal}>LEARN MORE</button>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Portfolio = ({showModal}) => (
             <div className={styles.overlay__text}>
               <div>Home Finder</div>
               <span>React/Puppeteer/MongoDB</span>
-              <button className={styles.btn__more} onClick={showModal}>LEARN MORE</button>
+              <button className={styles.btn__more} name="Home Finder" onClick={showModal}>LEARN MORE</button>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ const Portfolio = ({showModal}) => (
             <div className={styles.overlay__text}>
               <div>Croxy back-end</div>
               <span>Postgresql/Node/Nginx/AWS</span>
-              <button className={styles.btn__more} onClick={showModal}>LEARN MORE</button>
+              <button className={styles.btn__more} name="Croxy back-end" onClick={showModal}>LEARN MORE</button>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const Portfolio = ({showModal}) => (
             <div className={styles.overlay__text}>
               <div>Croxy front-end</div>
               <span>React/Node/Mongodb/Docker</span>
-              <button className={styles.btn__more} onClick={showModal}>LEARN MORE</button>
+              <button className={styles.btn__more} name="Croxy front-end" onClick={showModal}>LEARN MORE</button>
             </div>
           </div>
         </div>

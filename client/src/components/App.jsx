@@ -16,6 +16,7 @@ class App extends React.Component {
 
     this.state = {
       modal: false,
+      activeProject: null,
     }
     this.showModal = this.showModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -24,7 +25,11 @@ class App extends React.Component {
   showModal(e) {
     e.preventDefault();
     e.stopPropagation();
-    this.setState({ modal: true });
+
+    this.setState({
+      modal: true,
+      activeProject: e.target.name,
+    });
   }
 
   closeModal() {
@@ -54,8 +59,12 @@ class App extends React.Component {
           title="My articles"
           id="blog"
         />
-        <Modal show={ this.state.modal } closeModal={ e => this.closeModal(e) }>
-          <Project projectData={projectData} />
+        <Modal show={this.state.modal} closeModal={ e => this.closeModal(e) }>
+          {
+            this.state.modal
+            ? <Project projectData={projectData} activeProject={this.state.activeProject} />
+            : null
+          }
         </Modal>
       </div>
     )
