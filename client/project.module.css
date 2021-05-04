@@ -4,3 +4,24 @@
   padding: 0;
   background-color: #240115;
 }
+
+.card_details {
+  padding: 30px 20px 10px 20px;
+}
+
+.card_details div:nth-child(1) {
+  font-size: 22pt;
+  font-weight: 700;
+  color: #444649;
+}
+
+.card_details div:nth-child(2) {
+  font-size: 11pt;
+  text-transform: uppercase;
+  color: #c0c0c0;
+  font-weight: 700;
+}
+
+.card_details hr {
+  border: 1px solid gray;
+}

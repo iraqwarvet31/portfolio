@@ -69,7 +69,6 @@ const Portfolio = ({showModal}) => (
         </div>
       </div>
     </div>
-    <button className="btn btn-danger">TEST BTN</button>
   </div>
 )
 

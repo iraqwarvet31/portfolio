@@ -7,10 +7,15 @@
 }
 
 .modal {
-  background-color: rgba(0, 0, 0, .6) !important;
+  background-color: #00000099 !important;
   overflow: visible;
 }
 
 .modal_close {
   cursor: pointer;
+}
+
+button img {
+  margin-top: 210px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
