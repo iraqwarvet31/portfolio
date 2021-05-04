@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from '../../project.module.css';
 
 const Project = (props) => {
   return (
-    <div className="card">
+    <div className={styles.card}>
       <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/homeNew700.png" alt=""/>
       <div className="card_details">
         <h3>Retroflix streaming solutions</h3>

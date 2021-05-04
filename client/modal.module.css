@@ -1,12 +1,16 @@
 .modal_container {
   position: absolute;
-  width: 600px;
+  max-width: 700px;
   background: #ffffff;
-  left: 40%;
-  top: 150%;
-  padding: 20px;
+  left: 35%;
+  top: 20%;
 }
 
 .modal {
   background-color: rgba(0, 0, 0, .6) !important;
+  overflow: visible;
+}
+
+.modal_close {
+  cursor: pointer;
 }

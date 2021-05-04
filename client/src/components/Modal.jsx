@@ -10,7 +10,7 @@ const Modal = ({ closeModal, show, children }) => {
     <div className={showHideClassName}>
       <div className={`modal-container ${styles.modal_container}`}>
         {children}
-        <a href="#" className="modal-close" onClick={closeModal}>
+        <a className={styles.modal_close} onClick={closeModal}>
           close
         </a>
       </div>
