@@ -1,5 +1,4 @@
 .modal_container {
-  border-radius: 5px;
   position: absolute;
   max-width: 700px;
   background: #ffffff;
@@ -9,7 +8,6 @@
 
 .modal {
   background-color: rgba(0, 0, 0, 0.6) !important;
-  overflow: visible;
 }
 
 .modal_close {
