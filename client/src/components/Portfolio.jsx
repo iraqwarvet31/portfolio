@@ -25,7 +25,7 @@ const Portfolio = ({showModal}) => (
             </div>
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn={`${styles.animate} ${styles.fadeInDown}`}>
+        <ScrollAnimation animateIn={`${styles.animate} ${styles.delay1} ${styles.fadeInDown}`}>
           <div className={`${styles.card} shadow`}>
             <img
               src="https://portfolioprofile.s3-us-west-1.amazonaws.com/puppeteerScaled-390.jpg"
@@ -42,7 +42,7 @@ const Portfolio = ({showModal}) => (
             </div>
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn={`${styles.animate} ${styles.fadeInTopRight}`}>
+        <ScrollAnimation animateIn={`${styles.animate} ${styles.delay2} ${styles.fadeInTopRight}`}>
           <div className={`${styles.card} shadow`}>
             <img
               src="https://portfolioprofile.s3-us-west-1.amazonaws.com/scale-390.jpg"
@@ -59,7 +59,7 @@ const Portfolio = ({showModal}) => (
             </div>
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn={`${styles.animate} ${styles.fadeInUp}`}>
+        <ScrollAnimation animateIn={`${styles.animate} ${styles.delay3} ${styles.fadeInUp}`}>
           <div className={`${styles.card} shadow`}>
             <img
               src="https://portfolioprofile.s3-us-west-1.amazonaws.com/starsScaled-390.jpeg"

@@ -5,7 +5,7 @@ import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
 import About from './About.jsx';
 import Portfolio from './Portfolio.jsx';
-import Blog from './Blog.jsx';
+import Contact from './Contact.jsx';
 import Modal from './Modal.jsx';
 import Project from './Project.jsx'
 import projectData from '../../projectData.js'
@@ -55,9 +55,9 @@ class App extends React.Component {
           id="styles.portfolio"
           showModal={this.showModal}
         />
-        <Blog
-          title="My articles"
-          id="blog"
+        <Contact
+          title="Contact form"
+          id="contact"
         />
         <Modal show={this.state.modal} closeModal={ e => this.closeModal(e) }>
           {

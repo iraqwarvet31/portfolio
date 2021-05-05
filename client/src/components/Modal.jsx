@@ -7,7 +7,7 @@ const Modal = ({ closeModal, show, children }) => {
     : `${styles.modal} modal d-none`;
 
   return (
-    <div className={showHideClassName}>
+    <div className={`shadow-lg ${showHideClassName}`}>
       <div className={`modal-container ${styles.modal_container} shadow-lg`}>
         {children}
         <a className={styles.modal_close} onClick={closeModal}>

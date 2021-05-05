@@ -8,7 +8,7 @@
 }
 
 .heading {
-  max-width: 75px;
+  max-width: 90px;
   text-align: center;
   background-color: #000;
   border: 2px solid #000;
@@ -183,4 +183,20 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+.delay1 {
+  animation-delay: 125ms;
+}
+
+.delay2 {
+  animation-delay: 250ms;
+}
+
+.delay3 {
+  animation-delay: 500ms;
+}
+
+.delay4 {
+  animation-delay: 2s;
 }

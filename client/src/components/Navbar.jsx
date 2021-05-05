@@ -43,11 +43,11 @@ class Navbar extends React.Component {
             </Link>
             <Link
               activeClass="active"
-              to="blog" spy={true}
+              to="contact" spy={true}
               smooth={true}
               duration={250}
             >
-              <li>BLOG</li>
+              <li>CONTACT</li>
             </Link>
           </ul>
         </nav>
