@@ -19,11 +19,11 @@ const Project = ({ activeProject, projectData }) => {
         navSize={50}
         navMargin={0}
       />
-      <hr />
+      <hr className={styles.divider_one} />
       <div className={styles.card_details}>
         <div>{selectedProject[0].title}</div>
         <div>{selectedProject[0].subTitle}</div>
-        <hr />
+        <hr className={styles.divider_two} />
         <div>{selectedProject[0].description}</div>
       </div>
     </div>

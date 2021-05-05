@@ -1,4 +1,5 @@
 .modal_container {
+  border-radius: 5px;
   position: absolute;
   max-width: 700px;
   background: #ffffff;
@@ -7,14 +8,14 @@
 }
 
 .modal {
-  background-color: #00000099 !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
   overflow: visible;
 }
 
 .modal_close {
   cursor: pointer;
   float: right;
-  padding: 20px;
+  padding: 10px;
   font-size: 25pt;
 }
 

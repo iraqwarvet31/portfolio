@@ -1,4 +1,4 @@
-.card hr {
+.divider_one {
   border: 2px solid #240115;
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
 }
 
 .card_details {
-  padding: 30px 20px 10px 20px;
+  padding: 30px 20px 0 20px;
 }
 
 .card_details div:nth-child(1) {
@@ -22,6 +22,11 @@
   font-weight: 700;
 }
 
-.card_details hr {
-  border: 1px solid gray;
+.card_details div:nth-child(4) {
+  margin-right: 100px;
+  color: #333;
+}
+
+.divider_two {
+  margin-right: 100px;
 }
