@@ -16,7 +16,7 @@ const Project = ({ activeProject, projectData }) => {
         showNavs={true}
         useGPURender={true}
         navStyle={2}
-        navSize={35}
+        navSize={50}
         navMargin={0}
       />
       <hr />

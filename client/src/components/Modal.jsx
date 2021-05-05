@@ -11,7 +11,7 @@ const Modal = ({ closeModal, show, children }) => {
       <div className={`modal-container ${styles.modal_container}`}>
         {children}
         <a className={styles.modal_close} onClick={closeModal}>
-          close
+          <span class="iconify" data-icon="carbon:close" data-inline="false"></span>
         </a>
       </div>
     </div>
