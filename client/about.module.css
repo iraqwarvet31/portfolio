@@ -17,19 +17,19 @@
 .container {
   display: inline-block;
   font-family: 'Raleway', serif;
-  max-width: 1250px;
+  max-width: 1260px;
   /* margin-top: 100px; */
   padding: 100px 0 50px 0;
 }
 
 .container h1 {
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 25pt;
   color: #444649;
 }
 
 .skillsContainer {
-  padding: 100px 0 0 0;
+  padding: 100px 40px 0 40px;
 }
 
 .skillTextContainer {
@@ -58,7 +58,7 @@
 
 .iconify {
   height: 100%;
-  font-size: 40pt;
+  font-size: 35pt;
   color: #fff;
 }
 

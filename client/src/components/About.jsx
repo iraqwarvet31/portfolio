@@ -15,18 +15,18 @@ const About = (props) => {
           <div>
             <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY}`}>
               <div className={styles.iconContainer}>
-                <span className={`${styles.iconify} iconify`} data-icon="mdi-speedometer" data-inline="false"></span>
+                <span className={`${styles.iconify} iconify`} data-icon="ps:lab" data-inline="false"></span>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn="animate__fadeIn">
               <div className={styles.textContainer}>
                 <div className={styles.skillTextContainer}>
-                  Fast
+                  TDD
                 </div>
                 <div className={styles.descriptionContainer}>
-                  <span>Fast load times and lag free</span>
-                  <span> interaction, my highest priority.</span>
+                  <span>Knowledeable with many testing</span>
+                  <span> frameworks</span>
                 </div>
               </div>
             </ScrollAnimation>
@@ -35,18 +35,18 @@ const About = (props) => {
           <div>
             <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY} ${styles.delay1}`}>
               <div className={styles.iconContainer}>
-                <span className={`${styles.iconify} iconify`} data-icon="mdi:cellphone-link" data-inline="false"></span>
+                <span className={`${styles.iconify} iconify`} data-icon="zmdi:card-travel" data-inline="false"></span>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn={`animate__fadeIn ${styles.delay1}`}>
               <div className={styles.textContainer}>
                 <div className={styles.skillTextContainer}>
-                  Responsive
+                  Deployment
                 </div>
                 <div className={styles.descriptionContainer}>
-                  <span>My layouts will work on any</span>
-                  <span> device, big or small.</span>
+                  <span>Deployed multiple apps on</span>
+                  <span> AWS EC2 and Heroku.</span>
                 </div>
               </div>
             </ScrollAnimation>
@@ -55,18 +55,18 @@ const About = (props) => {
           <div>
             <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY} ${styles.delay2}`}>
               <div className={styles.iconContainer}>
-                <span className={`${styles.iconify} iconify`} data-icon="ic:outline-lightbulb" data-inline="false"></span>
+                <span className={`${styles.iconify} iconify`} data-icon="fa-solid:people-arrows" data-inline="false"></span>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn={`animate__fadeIn ${styles.delay2}`}>
               <div className={styles.textContainer}>
                 <div className={styles.skillTextContainer}>
-                  Intuitive
+                  Agile
                 </div>
                 <div className={styles.descriptionContainer}>
-                  <span>Strong preference for easy to</span>
-                  <span> use, intuitive UX/UI</span>
+                  <span>Familiar working in Agile</span>
+                  <span> environments using Trello.</span>
                 </div>
               </div>
             </ScrollAnimation>
@@ -75,18 +75,18 @@ const About = (props) => {
           <div>
             <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY} ${styles.delay3}`}>
               <div className={styles.iconContainer}>
-                <span className={`${styles.iconify} iconify`} data-icon="ic:sharp-dynamic-feed" data-inline="false"></span>
+                <span className={`${styles.iconify} iconify`} data-icon="mdi:speedometer" data-inline="false"></span>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn={`animate__fadeIn ${styles.delay3}`}>
               <div className={styles.textContainer}>
                 <div className={styles.skillTextContainer}>
-                  Dynamic
+                  Optimization
                 </div>
                 <div className={styles.descriptionContainer}>
-                  <span>Websites don't have to be static, I love</span>
-                  <span> making pages come to life.</span>
+                  <span>Fast load times and lag free</span>
+                  <span> are my highest priority.</span>
                 </div>
               </div>
             </ScrollAnimation>
@@ -97,14 +97,14 @@ const About = (props) => {
           <div className={`${styles.profileContainer} ${styles.item}`}>
             <img src="https://portfolioprofile.s3-us-west-1.amazonaws.com/20210418_180012.jpg" />
             <div className={styles.meHeader}>
-              Who's this guy?
+              Who am I?
             </div>
             <div className={styles.meText}>
               <span>I'm a Software Engineer living in Pismo Beach, CA.</span>
-              <span> I have a serious passion for UI effects, animations and creating</span>
-              <span> intuitive, dynamic user experiences.</span>
+              <span> I have a serious passion for solving complex</span>
+              <span> problems and bringing ideas to life. No task is impossible.</span>
               <br />
-              <a href="#"> Let's make something special!</a>
+              <a href="#"> Let's colaborate!</a>
             </div>
           </div>
           <div className={styles.item}>
