@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../contact.module.css'
 
-const Blog = (props) => (
+const Contact = (props) => (
   <div className={styles.wrapper}>
     <div id="contact" className={styles.contact}>
       <div className={styles.container}>
@@ -22,6 +22,10 @@ const Blog = (props) => (
               <label for="exampleFormControlTextarea1" />
               <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type your message" rows="10"></textarea>
             </div>
+            <button className={styles.btnSubmit}>
+              Submit
+
+            </button>
           </form>
         </div>
       </div>
@@ -29,4 +33,4 @@ const Blog = (props) => (
   </div>
 )
 
-export default Blog;
+export default Contact;
