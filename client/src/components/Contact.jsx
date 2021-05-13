@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import styles from '../../contact.module.css'
 
 class Contact extends React.Component {
@@ -31,6 +32,16 @@ class Contact extends React.Component {
     e.preventDefault();
     this.setState({ status: "Sending" });
 
+    // axios.post('/contact', this.state)
+    //   .then((response) => {
+    //     console.log('hello')
+    //     if (response.data.status === 'sent') {
+    //       alert('Message Sent');
+    //       this.setState({ name: '', email: '', message: '', status: 'Submit'})
+    //     } else if (response.data.status === 'failed') {
+    //         alert('Message Failed');
+    //     }
+    //   })
     axios({
       method: "POST",
       url: "http://localhost:3000/contact",
@@ -38,7 +49,7 @@ class Contact extends React.Component {
     }).then((response) => {
       if (response.data.status === 'sent') {
         alert('Message Sent');
-        this.setState({ name: '', email: '', message: '', status: 'Submit'};)
+        this.setState({ name: '', email: '', message: '', status: 'Submit'})
       } else if (response.data.status === 'failed') {
         alert('Message Failed');
       }
