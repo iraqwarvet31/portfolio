@@ -28,6 +28,7 @@
     "express": "^4.17.1",
     "nodemailer": "^6.6.0",
     "react": "^17.0.1",
+    "react-alert": "^7.0.3",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^17.0.1",
     "react-particles-js": "^3.4.1",

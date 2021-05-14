@@ -48,6 +48,15 @@ class Contact extends React.Component {
   }
 
   render() {
+    const options = {
+      // you can also just use 'bottom center'
+      position: positions.BOTTOM_CENTER,
+      timeout: 5000,
+      offset: '30px',
+      // you can also just use 'scale'
+      transition: transitions.SCALE
+    }
+
     return (
       <div className={styles.wrapper}>
         <div id="contact" className={styles.contact}>
@@ -97,39 +106,55 @@ class Contact extends React.Component {
             </div>
           </div>
           <footer className={styles.footer}>
-              <Link
-                activeClass="active"
-                to="home" spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <a href="#">
-                  <span class={`iconify ${styles.top_icon}`} data-icon="ant-design:arrow-up-outlined" data-inline="false"></span>
-                </a>
-              </Link>
-              <div className={styles.ghost_container}></div>
-              <div className={styles.icon_wrap}>
-                <a href="https://www.linkedin.com/in/larryolguin/" target="_blank">
-                  <div className={styles.icon_container}>
-                    <span className={`${styles.icon} iconify`} data-icon="grommet-icons:linkedin-option" data-inline="false" />
-                  </div>
-                </a>
-                <a href="https://twitter.com/byteTheBits0101" target="_blank">
-                  <div className={styles.icon_container}>
-                    <span className={`${styles.icon} iconify`} data-icon="simple-icons:twitter" data-inline="false" />
-                  </div>
-                </a>
-                <a href="https://www.instagram.com/justadev_/" target="_blank">
-                  <div className={styles.icon_container}>
-                    <span className={`${styles.icon} iconify`} data-icon="brandico:instagram" data-inline="false" />
-                  </div>
-                </a>
-                <a href="https://github.com/iraqwarvet31" target="_blank">
-                  <div className={styles.icon_container}>
-                    <span className={`${styles.icon} iconify`} data-icon="akar-icons:github-fill" data-inline="false" />
-                  </div>
-                </a>
-              </div>
+            <Link
+              activeClass="active"
+              to="about" spy={true}
+              smooth={true}
+              duration={250}
+            >
+              <a href="#">
+                <span className={`iconify ${styles.top_icon}`} data-icon="ant-design:arrow-up-outlined" data-inline="false"></span>
+              </a>
+            </Link>
+            <div className={styles.ghost_container}></div>
+            <div className={styles.icon_wrap}>
+              <a href="https://www.linkedin.com/in/larryolguin/" target="_blank">
+                <div className={styles.icon_container}>
+                  <span
+                    className={`${styles.icon} iconify`}
+                    data-icon="grommet-icons:linkedin-option"
+                    data-inline="false"
+                  />
+                </div>
+              </a>
+              <a href="https://twitter.com/byteTheBits0101" target="_blank">
+                <div className={styles.icon_container}>
+                  <span
+                    className={`${styles.icon} iconify`}
+                    data-icon="simple-icons:twitter"
+                    data-inline="false"
+                  />
+                </div>
+              </a>
+              <a href="https://www.instagram.com/justadev_/" target="_blank">
+                <div className={styles.icon_container}>
+                  <span
+                    className={`${styles.icon} iconify`}
+                    data-icon="brandico:instagram"
+                    data-inline="false"
+                  />
+                </div>
+              </a>
+              <a href="https://github.com/iraqwarvet31" target="_blank">
+                <div className={styles.icon_container}>
+                  <span
+                    className={`${styles.icon} iconify`}
+                    data-icon="akar-icons:github-fill"
+                    data-inline="false"
+                  />
+                </div>
+              </a>
+            </div>
           </footer>
         </div>
       </div>

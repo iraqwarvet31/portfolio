@@ -101,11 +101,13 @@ input, textarea, select {
   margin: 0 15px 0 15px;
   width: 55px;
   height: 55px;
+  overflow: hidden;
+  transition: all 100ms ease-in-out;
 }
 
 .icon {
   min-height: 100%;
-  font-size: 18pt;
+  font-size: 15pt;
   color: #fff;
 }
 
@@ -116,7 +118,9 @@ input, textarea, select {
 
 .footer a:nth-child(1) {
   position: relative;
+
 }
+
 
 .top_icon {
   background-color: #e31b6d;
@@ -128,3 +132,68 @@ input, textarea, select {
   top: -20px;
   left: 0;
 }
+
+
+/* Animations for icons */
+@-webkit-keyframes toTopFromBottom {
+	49% {
+		-webkit-transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+@keyframes toTopFromBottom {
+  49% {
+		-moz-transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+@keyframes toTopFromBottom {
+	49% {
+		transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+.icon_container:hover .icon {
+  display: inline-block;
+  animation-name: toTopFromBottom;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+  font-size: 12pt;
+}
+
+.icon_container:hover {
+  width: 50px;
+  height: 50px;
+}
+
+/* @keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+} */
