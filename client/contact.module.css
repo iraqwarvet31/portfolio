@@ -5,18 +5,17 @@
 .contact {
   font-family: 'Raleway', serif;
   width: 100%;
-  height: 80vh;
+  min-height: 50vh;
   text-align: center;
-  background-color: #35011f;
+  background-color: #450228;
   color: #f5f5f5;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 10%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 6%);
 }
 
 .container {
   display: inline-block;
   width: 500px;
-  margin-top: 200px;
-  padding: 0 0 50px 0;
+  padding: 150px 0 50px 0;
 }
 
 .form_container {
@@ -28,11 +27,11 @@
   font-size: 25pt;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #f5f5f5;
+  color: #fff;
 }
 
 h5 {
-  margin-top: 50px;
+  margin: 50px 0 25px 0;
   color: #e72e41;
 }
 
@@ -41,11 +40,11 @@ h5 {
   height: 2px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 input, textarea, select {
-  background-color: #240115 !important;
+  background-color: #35011f !important;
   border: none !important;
 }
 
@@ -65,9 +64,10 @@ input, textarea, select {
   font-size: 12pt;
   color: #fff;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   margin-top: 15px;
-  padding: 10px 30px;
+  float: right;
+  padding: 9px 35px;
   display: inline;
   transition: all 0.2s ease-in-out;
 }
@@ -75,6 +75,56 @@ input, textarea, select {
 
 .btnSubmit:hover {
   background-color: #ea0789;
-  border: none;
-  border: 2px solid #ea0789;
+  border: 1px solid #ea0789;
+}
+
+/* Social media icons */
+
+
+/* FOOTER */
+.footer {
+  background-color: #35011f;
+  width: 100%;
+  min-height: 240px;
+  position: relative;
+}
+
+.icon_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon_container {
+  background-color: #450228;
+  border-radius: 5px;
+  margin: 0 15px 0 15px;
+  width: 55px;
+  height: 55px;
+}
+
+.icon {
+  min-height: 100%;
+  font-size: 18pt;
+  color: #fff;
+}
+
+.ghost_container {
+  min-height: 80px;
+  background-color: #35011f;
+}
+
+.footer a:nth-child(1) {
+  position: relative;
+}
+
+.top_icon {
+  background-color: #e31b6d;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 30pt;
+  position: absolute;
+  top: -20px;
+  left: 0;
 }

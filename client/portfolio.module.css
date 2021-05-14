@@ -1,11 +1,11 @@
 .portfolio {
   font-family: 'Raleway', serif;
   width: 100%;
-  height: 70vh;
+  min-height: 80vh;
   text-align: center;
   background-color: #FFE7E9;
   color: #444649;
-  clip-path: polygon(100% 100%, 0 100%, 0 10%, 50% 0, 100% 10%);
+  clip-path: polygon(100% 100%, 0 100%, 0 6%, 50% 0, 100% 6%);
 }
 
 .heading {
@@ -20,7 +20,6 @@
   display: inline-block;
   max-width: 1200px;
   margin-top: 100px;
-  padding: 0 0 50px 0;
 }
 
 .container h1 {

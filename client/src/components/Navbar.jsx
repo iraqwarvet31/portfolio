@@ -44,6 +44,7 @@ class Navbar extends React.Component {
             <Link
               activeClass="active"
               to="contact" spy={true}
+              offset={-350}
               smooth={true}
               duration={250}
             >
