@@ -12,7 +12,7 @@ class Navbar extends React.Component {
   }
 
   render() {
-
+    debugger;
     return (
       <div>
         <nav className={styles.navWrapper}>
@@ -47,7 +47,6 @@ class Navbar extends React.Component {
             <Link
               activeClass={`active ${styles.activeLink}`}
               to="contact" spy={true}
-              offset={-350}
               smooth={true}
               duration={250}
               className={styles.link}
