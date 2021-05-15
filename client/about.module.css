@@ -1,9 +1,4 @@
 .heading {
-  /* max-width: 50px;
-  text-align: center;
-  background-color: #000;
-  border: 2px solid #000;
-  margin: 20px 0 0 603px; */
   width: 5%;
   height: 1px;
   margin: 10px auto 0 auto;
@@ -14,7 +9,6 @@
 .about {
   font-family: 'Raleway', serif !important;
   width: 100%;
-  /* min-height: 85vh; */
   text-align: center;
   background-color: #fff;
 }
@@ -22,8 +16,7 @@
 .container {
   display: inline-block;
   font-family: 'Raleway', serif;
-  max-width: 1260px;
-  /* margin-top: 100px; */
+  max-width: 1200px;
   padding: 100px 0 50px 0;
 }
 
@@ -35,6 +28,10 @@
 
 .skillsContainer {
   padding: 100px 40px 0 40px;
+}
+
+.skillContainer {
+  width: 33.333333%;
 }
 
 .skillTextContainer {
@@ -55,7 +52,7 @@
 
 .iconContainer {
   width: 120px;
-  height: 110px;
+  height: 100px;
   margin: 0 auto;
   background-color: #FF5964;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -63,7 +60,7 @@
 
 .iconify {
   height: 100%;
-  font-size: 35pt;
+  font-size: 30pt;
   color: #fff;
 }
 
@@ -78,6 +75,8 @@
 
 .flex {
   display: flex;
+  /* align-items: flex-start;
+  flex-wrap: wrap; */
 }
 
 .flexSkill {
@@ -105,6 +104,10 @@
   padding: 25px 0;
 }
 
+.meText {
+  padding: 0 75px;
+}
+
 .meText span {
   align-items: left;
   color: #616161;
@@ -117,16 +120,12 @@
 }
 
 .profileContainer {
-  padding: 0 102px 0;
+  padding: 0 0 0 0;
 }
-
-
-
-
 
 .bar {
   background-color: #FFE7E9;
-  width: 85%;
+  width: 100%;
   height: 28px;
   margin: 0 0 15px;
   position: relative;
@@ -138,7 +137,6 @@
   left: 0;
   height: 28px;
   background-color: #e72e41;
-  /*FF5964*/
   z-index: 2;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -146,10 +144,14 @@
   animation-fill-mode: both;
 }
 
-.item {
-  flex-basis: 50%;
+.itemsContainer {
+  flex-basis: 100%;
   flex-grow: 0;
   position: relative;
+}
+
+.itemsWrapper {
+  padding-right: 50px;
 }
 
 .tag {
@@ -185,21 +187,101 @@
   width: 50%;
 }
 
-/* .bar span {
-  align-items: flex-end;
-} */
-
 .endTag {
   font-size: 11pt;
   align-items: flex-end;
-  height: 100%;
-  padding-right: 15px;
+  padding: 8px 10px 0 0;
   line-height: 11pt;
 }
 
 /* ///////////////////////////////////////////////////////////////////////// */
 
-/* Animations */
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 960px) {
+  .flex {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skillContainer {
+    width: 50%;
+    margin-top: 50px;
+  }
+
+  .skillsContainer {
+    padding-top: 50px;
+  }
+
+  .itemsContainer {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  .itemsWrapper {
+    padding: 40px 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .iconContainer {
+    width: 85px;
+    height: 71px;
+  }
+
+  .skillContainer {
+    margin-top: 30px;
+  }
+
+  .skillTextContainer {
+    padding-bottom: 0;
+  }
+
+  .iconify {
+    font-size: 20pt;
+  }
+
+  .profileContainer img {
+    width: 264px;
+    height: 211px;
+  }
+
+  .descriptionContainer {
+    font-size: 9pt;
+  }
+
+  .descriptionContainer span {
+    line-height: 12pt;
+  }
+
+  .itemsWrapper {
+    padding: 20px 75px;
+  }
+
+  .bar {
+    width: 97%;
+    height: 22px;
+  }
+
+  .tag {
+    font-size: 8pt;
+    width: 100px;
+  }
+
+  .endTag {
+    font-size: 8pt;
+    padding: 4px 6px 0 0;
+  }
+
+  .fill {
+    height: 22px;
+  }
+}
+
+
+/* ANIMATIONS */
 
 .animate__animated {
   -webkit-animation-duration: 1s;
@@ -294,6 +376,7 @@
 0% { width: 0; }
 100% { width: 80%; }
 }
+
 .fillSeventy {
   background-color: #e72e41;
   -webkit-animation: seventyBar 2000ms ease-in-out;
