@@ -33,7 +33,6 @@
     "react-particles-js": "^3.4.1",
     "react-scroll": "^1.8.2",
     "react-simple-image-slider": "^2.1.0",
-    "react-very-simple-alerts": "^1.0.1",
     "style-loader": "^2.0.0"
   },
   "devDependencies": {

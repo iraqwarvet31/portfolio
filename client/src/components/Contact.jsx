@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, animateScroll as scroll } from "react-scroll";
-import { AlertContainer, alerts } from "react-very-simple-alerts";
 import styles from '../../contact.module.css';
 
 class Contact extends React.Component {
@@ -32,16 +31,6 @@ class Contact extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const options = {
-      message: 'My alert message',
-      style: {
-        backgroundColor: 'cornflowerblue',
-        borderRadius: 0,
-      },
-      offset: '50px',
-      position: 'top right',
-      duration: 0,
-    }
 
     this.setState({ status: "Sending" });
 
@@ -51,10 +40,10 @@ class Contact extends React.Component {
       data: this.state,
     }).then((response) => {
       if (response.data.status === 'sent') {
-        alerts.show('Message Sent');
+        alert('Message Sent');
         this.setState({ name: '', email: '', message: '', status: 'Submit'})
       } else if (response.data.status === 'failed') {
-        alerts.show('Message Failed');
+        alert('Message Failed');
       }
     });
   }
