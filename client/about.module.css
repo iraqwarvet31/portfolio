@@ -1,9 +1,14 @@
 .heading {
-  max-width: 50px;
+  /* max-width: 50px;
   text-align: center;
   background-color: #000;
   border: 2px solid #000;
-  margin: 20px 0 0 603px;
+  margin: 20px 0 0 603px; */
+  width: 5%;
+  height: 1px;
+  margin: 10px auto 0 auto;
+  background-color: #444649;
+  border: 2px solid #444649;
 }
 
 .about {

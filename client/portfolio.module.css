@@ -4,16 +4,15 @@
   min-height: 80vh;
   text-align: center;
   background-color: #FFE7E9;
-  color: #444649;
   clip-path: polygon(100% 100%, 0 100%, 0 6%, 50% 0, 100% 6%);
 }
 
 .heading {
-  max-width: 90px;
-  text-align: center;
-  background-color: #000;
-  border: 2px solid #000;
-  margin: 20px 0 0 550px;
+  width: 8%;
+  height: 1px;
+  margin: 10px auto 0 auto;
+  background-color: #444649;
+  border: 2px solid #444649;
 }
 
 .container {
@@ -25,7 +24,7 @@
 .container h1 {
   font-size: 25pt;
   font-weight: 700;
-  color: #444649;
+  color: #444649s;
 }
 
 .projects {

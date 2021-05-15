@@ -24,10 +24,9 @@
 }
 
 .container h1 {
-  font-size: 25pt;
+  font-size: 30pt;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #fff;
 }
 
 h5 {
@@ -38,8 +37,7 @@ h5 {
 .heading {
   width: 20%;
   height: 2px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
   background-color: #fff;
 }
 
@@ -109,6 +107,7 @@ input, textarea, select {
   min-height: 100%;
   font-size: 15pt;
   color: #fff;
+  transition: all 100ms ease-in-out;
 }
 
 .ghost_container {
@@ -133,6 +132,10 @@ input, textarea, select {
   left: 0;
 }
 
+.copyright {
+  color: #8f9aa7;
+  margin-top: 20px;
+}
 
 /* Animations for icons */
 @-webkit-keyframes toTopFromBottom {

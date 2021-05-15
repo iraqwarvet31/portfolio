@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, animateScroll as scroll } from "react-scroll";
-import styles from '../../contact.module.css'
+import { AlertContainer, alerts } from "react-very-simple-alerts";
+import styles from '../../contact.module.css';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -31,6 +32,17 @@ class Contact extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    const options = {
+      message: 'My alert message',
+      style: {
+        backgroundColor: 'cornflowerblue',
+        borderRadius: 0,
+      },
+      offset: '50px',
+      position: 'top right',
+      duration: 0,
+    }
+
     this.setState({ status: "Sending" });
 
     axios({
@@ -39,23 +51,15 @@ class Contact extends React.Component {
       data: this.state,
     }).then((response) => {
       if (response.data.status === 'sent') {
-        alert('Message Sent');
+        alerts.show('Message Sent');
         this.setState({ name: '', email: '', message: '', status: 'Submit'})
       } else if (response.data.status === 'failed') {
-        alert('Message Failed');
+        alerts.show('Message Failed');
       }
     });
   }
 
   render() {
-    const options = {
-      // you can also just use 'bottom center'
-      position: positions.BOTTOM_CENTER,
-      timeout: 5000,
-      offset: '30px',
-      // you can also just use 'scale'
-      transition: transitions.SCALE
-    }
 
     return (
       <div className={styles.wrapper}>
@@ -108,9 +112,9 @@ class Contact extends React.Component {
           <footer className={styles.footer}>
             <Link
               activeClass="active"
-              to="about" spy={true}
+              to="home" spy={true}
               smooth={true}
-              duration={250}
+              duration={500}
             >
               <a href="#">
                 <span className={`iconify ${styles.top_icon}`} data-icon="ant-design:arrow-up-outlined" data-inline="false"></span>
@@ -155,6 +159,7 @@ class Contact extends React.Component {
                 </div>
               </a>
             </div>
+            <div className={styles.copyright}>Larry Olguin &#169; 2021</div>
           </footer>
         </div>
       </div>

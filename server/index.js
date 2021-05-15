@@ -25,7 +25,7 @@ contactEmail.verify((error) => {
   if (error) {
     console.log(error);
   } else {
-    console.log('Ready to Send');
+    console.log('Form ready to send emails to byteTheBits0101@gmail.com');
   }
 })
 
