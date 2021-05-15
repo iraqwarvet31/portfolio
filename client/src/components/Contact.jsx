@@ -51,8 +51,8 @@ class Contact extends React.Component {
   render() {
 
     return (
-      <div className={styles.wrapper}>
-        <div id="contact" className={styles.contact}>
+      <div id="contact" className={styles.wrapper}>
+        <div className={styles.contact}>
           <div className={styles.container}>
             <h1>CONTACT</h1>
             <hr className={styles.heading} />
@@ -148,7 +148,7 @@ class Contact extends React.Component {
                 </div>
               </a>
             </div>
-            <div className={styles.copyright}>Larry Olguin &#169; 2021</div>
+            <div className={styles.copyright}>Made with ❤️ by Larry Olguin &#169; 2021</div>
           </footer>
         </div>
       </div>

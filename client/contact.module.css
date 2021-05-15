@@ -5,7 +5,7 @@
 .contact {
   font-family: 'Raleway', serif;
   width: 100%;
-  min-height: 50vh;
+  /* min-height: 50vh; */
   text-align: center;
   background-color: #450228;
   color: #f5f5f5;

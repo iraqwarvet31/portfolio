@@ -18,37 +18,41 @@ class Navbar extends React.Component {
         <nav className={styles.navWrapper}>
           <ul className={styles.navLinks}>
             <Link
-              activeClass="active"
+              activeClass={`active ${styles.activeLink}`}
               to="home" spy={true}
               smooth={true}
               duration={250}
+              className={styles.link}
             >
-              <li>HOME</li>
+              HOME
             </Link>
             <Link
-              activeClass="active"
+              activeClass={`active ${styles.activeLink}`}
               to="about" spy={true}
               smooth={true}
               duration={250}
+              className={styles.link}
             >
-              <li>ABOUT</li>
+              ABOUT
             </Link>
             <Link
-              activeClass="active"
+              activeClass={`active ${styles.activeLink}`}
               to="portfolio" spy={true}
               smooth={true}
               duration={250}
+              className={styles.link}
             >
-              <li>PORTFOLIO</li>
+              PORTFOLIO
             </Link>
             <Link
-              activeClass="active"
+              activeClass={`active ${styles.activeLink}`}
               to="contact" spy={true}
               offset={-350}
               smooth={true}
               duration={250}
+              className={styles.link}
             >
-              <li>CONTACT</li>
+              CONTACT
             </Link>
           </ul>
         </nav>

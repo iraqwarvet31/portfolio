@@ -14,7 +14,7 @@
 .about {
   font-family: 'Raleway', serif !important;
   width: 100%;
-  min-height: 85vh;
+  /* min-height: 85vh; */
   text-align: center;
   background-color: #fff;
 }

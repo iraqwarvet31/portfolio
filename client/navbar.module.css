@@ -15,20 +15,25 @@
   padding: 15px 0;
 }
 
-.navLinks li {
+.navLinks .link {
   font-size: 14pt;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
 }
 
-li {
+.link {
   padding: 0 40px;
   list-style-type: none;
   transition: all 0.2s ease-in-out;
 }
 
-li:hover {
+.link:hover {
   color: #e72e41;
+}
+
+.activeLink {
+  color: #e72e41 !important;
 }
 
 
