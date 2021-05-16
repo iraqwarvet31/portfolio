@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import styles from '../../portfolio.module.css';
+import styles from './portfolio.module.css';
 
 const Portfolio = ({showModal}) => (
   <div id="portfolio" className={styles.portfolio}>

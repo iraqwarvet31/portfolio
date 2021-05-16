@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '../../home.module.css'
+import styles from './home.module.css'
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import Particles from 'react-particles-js';
-import ParticlesOptions from '../../particles.json'
+import ParticlesOptions from '../../lib/particles.json'
 
 const Home = ({showNavbar}) => {
 

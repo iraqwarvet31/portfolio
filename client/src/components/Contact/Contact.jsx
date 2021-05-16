@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, animateScroll as scroll } from "react-scroll";
 import ScrollAnimation from 'react-animate-on-scroll';
-import styles from '../../contact.module.css';
+import styles from './contact.module.css';
 
 class Contact extends React.Component {
   constructor(props) {

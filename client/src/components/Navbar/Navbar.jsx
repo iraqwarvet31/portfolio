@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../navbar.module.css'
+import styles from './navbar.module.css'
 import { Link } from "react-scroll";
 
 class Navbar extends React.Component {

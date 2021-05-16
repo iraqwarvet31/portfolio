@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link, animateScroll as scroll} from 'react-scroll';
 
-import Home from './Home.jsx';
-import Navbar from './Navbar.jsx';
-import About from './About.jsx';
-import Portfolio from './Portfolio.jsx';
-import Contact from './Contact.jsx';
-import Modal from './Modal.jsx';
-import Project from './Project.jsx'
-import projectData from '../../projectData.js'
+import Home from '../Home/Home.jsx';
+import Navbar from '../Navbar/Navbar.jsx';
+import About from '../About/About.jsx';
+import Portfolio from '../Portfolio/Portfolio.jsx';
+import Contact from '../Contact/Contact.jsx';
+import Modal from '../Modal/Modal.jsx';
+import Project from '../Project/Project.jsx'
+import projectData from '../../../projectData.js'
 
 class App extends React.Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../project.module.css';
+import styles from './project.module.css';
 import SimpleImageSlider from "react-simple-image-slider";
 
 const Project = ({ activeProject, projectData }) => {
