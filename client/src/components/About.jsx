@@ -9,11 +9,15 @@ const About = (props) => {
   return (
     <div id="about" className={styles.about}>
       <div className={styles.container}>
-        <h1>ABOUT</h1>
-        <hr className={styles.heading}/>
+        <ScrollAnimation animateIn={`${styles.animate} ${styles.bounceInLeft}`}>
+          <h1>ABOUT</h1>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn={`${styles.animate} ${styles.bounceInLeft} ${styles.delay2}`}>
+          <hr className={styles.heading} />
+        </ScrollAnimation>
         <div className={`${styles.skillsContainer} ${styles.flex}`}>
           <div className={styles.skillContainer}>
-            <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY}`}>
+            <ScrollAnimation animateIn={`${styles.animate} ${styles.flipInY}`}>
               <div className={styles.iconContainer}>
                 <span className={`${styles.iconify} iconify`} data-icon="ps:lab" data-inline="false"></span>
               </div>
@@ -33,7 +37,7 @@ const About = (props) => {
           </div>
 
           <div className={styles.skillContainer}>
-            <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY} ${styles.delay1}`}>
+            <ScrollAnimation animateIn={`${styles.animate} ${styles.flipInY} ${styles.delay1}`}>
               <div className={styles.iconContainer}>
                 <span className={`${styles.iconify} iconify`} data-icon="zmdi:card-travel" data-inline="false"></span>
               </div>
@@ -53,7 +57,7 @@ const About = (props) => {
           </div>
 
           <div className={styles.skillContainer}>
-            <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY} ${styles.delay2}`}>
+            <ScrollAnimation animateIn={`${styles.animate} ${styles.flipInY} ${styles.delay2}`}>
               <div className={styles.iconContainer}>
                 <span className={`${styles.iconify} iconify`} data-icon="fa-solid:people-arrows" data-inline="false"></span>
               </div>
@@ -73,7 +77,7 @@ const About = (props) => {
           </div>
 
           <div className={styles.skillContainer}>
-            <ScrollAnimation animateIn={`${styles.animate__animated} ${styles.flipInY} ${styles.delay3}`}>
+            <ScrollAnimation animateIn={`${styles.animate} ${styles.flipInY} ${styles.delay3}`}>
               <div className={styles.iconContainer}>
                 <span className={`${styles.iconify} iconify`} data-icon="mdi:speedometer" data-inline="false"></span>
               </div>

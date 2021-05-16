@@ -5,8 +5,12 @@ import styles from '../../portfolio.module.css';
 const Portfolio = ({showModal}) => (
   <div id="portfolio" className={styles.portfolio}>
     <div className={styles.container}>
-      <h1>PORTFOLIO</h1>
-      <hr className={styles.heading}/>
+      <ScrollAnimation animateIn={`${styles.animate} ${styles.bounceInLeft}`}>
+        <h1>PORTFOLIO</h1>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn={`${styles.animate} ${styles.bounceInLeft} ${styles.delay2}`}>
+        <hr className={styles.heading}/>
+      </ScrollAnimation>
       <div className={styles.projects}>
         <ScrollAnimation animateIn={`${styles.animate} ${styles.fadeInTopLeft}`}>
           <div className={`${styles.card}`}>

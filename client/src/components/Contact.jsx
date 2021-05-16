@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, animateScroll as scroll } from "react-scroll";
+import ScrollAnimation from 'react-animate-on-scroll';
 import styles from '../../contact.module.css';
 
 class Contact extends React.Component {
@@ -54,48 +55,54 @@ class Contact extends React.Component {
       <div id="contact" className={styles.wrapper}>
         <div className={styles.contact}>
           <div className={styles.container}>
-            <h1>CONTACT</h1>
-            <hr className={styles.heading} />
-            <h5>Have a question?</h5>
+            <ScrollAnimation animateIn={styles.animate__bounceInLeft}>
+              <h1>CONTACT</h1>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn={`${styles.animate__bounceInLeft} ${styles.delay}`}>
+              <hr className={styles.heading} />
+            </ScrollAnimation>
+              <h5>Have a question?</h5>
             <div className={styles.form_container} method="POST">
-              <form onSubmit={this.handleSubmit}>
-                <div className={`${styles.form_group} form-group ${styles.input_container}`}>
-                  <label htmlFor="exampleFormControlInput1" />
-                  <input
-                    type="text"
-                    id="name"
-                    value={this.state.name}
-                    onChange={this.handleChange}
-                    className="form-control"
-                    placeholder="Name"
-                  />
-                </div>
-                <div className={`${styles.form_group} form-group ${styles.input_container}`}>
-                  <label htmlFor="exampleFormControlInput1" />
-                  <input
-                    type="email"
-                    id="email"
-                    value={this.state.email}
-                    onChange={this.handleChange}
-                    className="form-control"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div className={`${styles.form_group} form-group`}>
-                  <label htmlFor="exampleFormControlTextarea1" />
-                  <textarea
-                    id="message"
-                    value={this.state.message}
-                    onChange={this.handleChange}
-                    className="form-control"
-                    placeholder="Type your message"
-                    rows="10"
-                  />
-                </div>
-                <button className={styles.btnSubmit} type="Submit">
-                  SUBMIT
-                </button>
-              </form>
+              <ScrollAnimation animateIn={`animate__fadeIn ${styles.animate__rubberBand}`}>
+                <form onSubmit={this.handleSubmit}>
+                  <div className={`${styles.form_group} form-group ${styles.input_container}`}>
+                    <label htmlFor="exampleFormControlInput1" />
+                    <input
+                      type="text"
+                      id="name"
+                      value={this.state.name}
+                      onChange={this.handleChange}
+                      className="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div className={`${styles.form_group} form-group ${styles.input_container}`}>
+                    <label htmlFor="exampleFormControlInput1" />
+                    <input
+                      type="email"
+                      id="email"
+                      value={this.state.email}
+                      onChange={this.handleChange}
+                      className="form-control"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div className={`${styles.form_group} form-group`}>
+                    <label htmlFor="exampleFormControlTextarea1" />
+                    <textarea
+                      id="message"
+                      value={this.state.message}
+                      onChange={this.handleChange}
+                      className="form-control"
+                      placeholder="Type your message"
+                      rows="10"
+                    />
+                  </div>
+                  <button className={styles.btnSubmit} type="Submit">
+                    SUBMIT
+                  </button>
+                </form>
+              </ScrollAnimation>
             </div>
           </div>
           <footer className={styles.footer}>

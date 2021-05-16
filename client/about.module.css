@@ -17,7 +17,7 @@
   display: inline-block;
   font-family: 'Raleway', serif;
   max-width: 1200px;
-  padding: 100px 0 50px 0;
+  padding: 120px 0 50px 0;
 }
 
 .container h1 {
@@ -308,13 +308,54 @@
 
 /* ANIMATIONS */
 
-.animate__animated {
+.animate {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-duration: var(--animate-duration);
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+/* HEADER ANIMATION */
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+.delay {
+  animation-delay: 250ms;
 }
 
 @keyframes flipInY {
