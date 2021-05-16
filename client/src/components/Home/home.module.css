@@ -64,23 +64,23 @@
 /* Mobile size*/
 @media screen and (max-width: 768px) {
   .text {
-    font-size: 20pt;
+    font-size: 22pt;
     white-space: nowrap;
     line-height: 20pt;
   }
 
   .btnHome {
-    font-size:7px;
-    padding: 5px 10px;
+    font-size:9px;
+    padding: 7px 12px;
   }
 
   .btnHome:hover > i {
-    margin-left: 10px;
-    font-size: 7px;
+    margin-left: 11px;
+    font-size: 9px;
   }
 
   .faArrowRight {
     font-size: 7px;
-    margin-left: 10px;
+    margin-left: 11px;
   }
 }
