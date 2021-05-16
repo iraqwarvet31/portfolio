@@ -28,7 +28,7 @@
   letter-spacing: 1px;
 }
 
-h5 {
+.container h5 {
   margin: 50px 0 25px 0;
   color: #e72e41;
 }
@@ -95,7 +95,7 @@ input, textarea, select {
 .icon_container {
   background-color: #450228;
   border-radius: 5px;
-  margin: 0 15px 0 15px;
+  margin: 0 0 0 35px;
   width: 55px;
   height: 55px;
   overflow: hidden;
@@ -199,3 +199,41 @@ input, textarea, select {
     transform: translate3d(0, 0, 0);
   }
 } */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 450px;
+
+  }
+
+  .container h1 {
+    font-size: 25pt;
+  }
+
+  .container h5 {
+    font-size: 10pt;
+    margin: 25px 0 12px 0;
+  }
+
+  .input_container {
+    height: 40px !important;
+  }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+    font-size: 11pt !important;
+  }
+
+  .btnSubmit {
+    font-size: 10pt;
+    margin-top: 20px;
+    padding: 8px 34px;
+  }
+
+  .btnSubmit:hover {
+    background-color: #ea0789;
+    border: 1px solid #ea0789;
+  }
+}
