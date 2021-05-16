@@ -226,13 +226,17 @@
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    padding-top: 50px;
+  }
+
   .iconContainer {
     width: 85px;
     height: 71px;
   }
 
   .skillContainer {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .skillTextContainer {
@@ -240,7 +244,7 @@
   }
 
   .iconify {
-    font-size: 20pt;
+    font-size: 18pt;
   }
 
   .profileContainer img {
@@ -249,29 +253,50 @@
   }
 
   .descriptionContainer {
-    font-size: 9pt;
+    font-size: 7pt;
   }
 
   .descriptionContainer span {
+    line-height: 10pt;
+  }
+
+  .meText {
     line-height: 12pt;
+  }
+
+  .meHeader {
+    font-size: 11pt;
+    color: #616161;
+    font-weight: 700;
+    padding: 20px 0;
+  }
+
+  .meText span {
+    font-size: 7pt;
+    line-height: 9pt;
   }
 
   .itemsWrapper {
     padding: 20px 75px;
   }
 
+  .itemsContainer {
+    padding-top: 50px;
+  }
+
   .bar {
     width: 97%;
     height: 22px;
+    margin-bottom: 10px;
   }
 
   .tag {
-    font-size: 8pt;
+    font-size: 7pt;
     width: 100px;
   }
 
   .endTag {
-    font-size: 8pt;
+    font-size: 7pt;
     padding: 4px 6px 0 0;
   }
 

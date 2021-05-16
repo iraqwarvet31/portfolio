@@ -32,7 +32,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 .card  {
@@ -126,6 +126,8 @@
 }
 
 
+
+/* ANIMATIONS */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -211,4 +213,68 @@
 
 .delay4 {
   animation-delay: 2s;
+}
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 960px) {
+  .card__image {
+    width: 290px;
+    height: 223px;
+  }
+
+  .overlay__text {
+    line-height: 10px;
+  }
+
+  .overlay__text div {
+    font-size: 12pt;
+    font-weight: 700;
+  }
+
+  .overlay__text div:nth-child(2) {
+    font-size: 10px;
+  }
+
+  .btn__more {
+    width: 90px;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .btn__more:hover {
+    border: 1px solid #e31b6d;
+  }
+
+  .projects {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card__image {
+    width: 230px;
+    height: 171px;
+  }
+
+  .overlay__text div {
+    font-size: 7pt;
+    font-weight: 700;
+  }
+
+  .overlay__text div:nth-child(2) {
+    font-size: 7pt;
+    line-height: 2px;
+  }
+
+  .btn__more {
+    width: 80px;
+    font-size: 7pt;
+    padding: 3px 9px;
+  }
+
+  .projects {
+    margin-top: 50px;
+  }
 }
