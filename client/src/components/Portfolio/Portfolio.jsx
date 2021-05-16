@@ -32,7 +32,7 @@ const Portfolio = ({showModal}) => (
         <ScrollAnimation animateIn={`${styles.animate} ${styles.delay1} ${styles.fadeInDown}`}>
           <div className={`${styles.card}`}>
             <img
-              src="https://portfolioprofile.s3-us-west-1.amazonaws.com/puppeteerScaled-390.jpg"
+              src="https://portfolioprofile.s3-us-west-1.amazonaws.com/homeScaled-390.jpeg"
               alt=""
               className={styles.card__image}
 
@@ -49,7 +49,7 @@ const Portfolio = ({showModal}) => (
         <ScrollAnimation animateIn={`${styles.animate} ${styles.delay2} ${styles.fadeInTopRight}`}>
           <div className={`${styles.card}`}>
             <img
-              src="https://portfolioprofile.s3-us-west-1.amazonaws.com/scale-390.jpg"
+              src="https://portfolioprofile.s3-us-west-1.amazonaws.com/metricsScaled-390.jpeg"
               alt=""
               className={styles.card__image}
 
@@ -66,7 +66,7 @@ const Portfolio = ({showModal}) => (
         <ScrollAnimation animateIn={`${styles.animate} ${styles.delay3} ${styles.fadeInUp}`}>
           <div className={`${styles.card}`}>
             <img
-              src="https://portfolioprofile.s3-us-west-1.amazonaws.com/starsScaled-390.jpeg"
+              src="https://portfolioprofile.s3-us-west-1.amazonaws.com/marketScaled-390.jpeg"
               alt=""
               className={styles.card__image}
 
