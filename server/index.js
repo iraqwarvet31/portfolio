@@ -4,7 +4,7 @@ const cors = require('cors');
 const nodemailer = require('nodemailer');
 
 let app = express();
-let port = 3000;
+let port = process.env.PORT || 3000;
 require('dotenv').config();
 
 app.use(express.static(__dirname + '/../public'));
