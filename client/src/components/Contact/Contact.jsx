@@ -37,7 +37,7 @@ class Contact extends React.Component {
 
     axios({
       method: "POST",
-      url: "http://localhost:3000/contact",
+      url: "/contact",
       data: this.state,
     }).then((response) => {
       if (response.data.status === 'sent') {
