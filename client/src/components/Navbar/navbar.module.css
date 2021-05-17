@@ -9,7 +9,7 @@
 .navLinks {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   background-color:#240115;
   padding: 15px 0;
@@ -38,6 +38,12 @@
 
 
 /* Navbar Tablet size */
-@media only screen and (min-width: 768px) {
-  .navLinks { flex-direction: row; }
+@media screen and (max-width: 768px) {
+  .link {
+    padding: 0 20px;
+  }
+
+  .navLinks .link {
+    font-size: 12pt;
+  }
 }
