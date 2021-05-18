@@ -147,7 +147,7 @@ class Contact extends React.Component {
                   />
                 </div>
               </a>
-              <a href="https://www.instagram.com/justadev_/" target="_blank">
+              <a href="https://www.instagram.com/bytethebits0101" target="_blank">
                 <div className={styles.icon_container}>
                   <span
                     className={`${styles.icon} iconify`}
