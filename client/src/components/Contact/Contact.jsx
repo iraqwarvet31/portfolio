@@ -35,19 +35,29 @@ class Contact extends React.Component {
 
     this.setState({ status: "Sending" });
 
-    axios({
-      method: "POST",
-      url: "http://127.0.0.1:3000/contact",
-      withCredentials: true,
-      data: this.state,
-    }).then((response) => {
-      if (response.data.status === 'sent') {
-        alert('Message Sent');
-        this.setState({ name: '', email: '', message: '', status: 'Submit'})
-      } else if (response.data.status === 'failed') {
-        alert('Message Failed');
-      }
-    });
+    // axios({
+    //   method: "POST",
+    //   url: "http://127.0.0.1:3000/contact",
+    //   withCredentials: true,
+    //   data: this.state,
+    // }).then((response) => {
+    //   if (response.data.status === 'sent') {
+    //     alert('Message Sent');
+    //     this.setState({ name: '', email: '', message: '', status: 'Submit'})
+    //   } else if (response.data.status === 'failed') {
+    //     alert('Message Failed');
+    //   }
+    // });
+
+    axios.post('/contact', this.state)
+      .then((response) => {
+        if (response.data.status === 'sent') {
+          alert('Message Sent');
+          this.setState({ name: '', email: '', message: '', status: 'Submit'})
+          } else if (response.data.status === 'failed') {
+            alert('Message Failed');
+          }
+      })
   }
 
   render() {
