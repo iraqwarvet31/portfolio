@@ -7,14 +7,6 @@ let app = express();
 let port = 3000;
 require('dotenv').config();
 
-app.use(cors({
-  origin: '*',
-  credentials: true,
-  allowedHeaders: ['Content-Type', 'Authorization', 'Content-Length', 'X-Requested-With', 'Accept'],
-  methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}));
-
 app.use(express.static(__dirname + '/../public'));
 app.use(express.json());
 app.use('/', router);

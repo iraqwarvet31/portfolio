@@ -16,5 +16,8 @@ RUN npm install
 # What port will the container talk to the outside world with once created?
 EXPOSE 3000
 
+#Environment Variables
+
+
 # How do you start your app?
 CMD [ "npm", "start" ]
