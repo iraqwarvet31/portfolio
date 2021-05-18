@@ -37,6 +37,7 @@ class Contact extends React.Component {
 
     axios({
       method: "POST",
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       url: "http://localhost:3000/contact",
       data: this.state,
     }).then((response) => {
