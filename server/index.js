@@ -13,6 +13,8 @@ app.use('/', router);
 
 // Authentication to my gmail account
 const contactEmail = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 465,
   service: 'gmail',
   auth: {
     user: process.env.GMAIL_USER,
