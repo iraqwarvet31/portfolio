@@ -60,6 +60,14 @@ app.use(express.static(__dirname + '/../public'));
 app.use(express.json());
 app.use('/', router);
 
+app.use(cors({
+  origin: '*',
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization', 'Content-Length', 'X-Requested-With', 'Accept'],
+  methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}));
+
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const REDIRECT_URI = process.env.REDIRECT_URI;
@@ -105,8 +113,6 @@ router.post('/contact', (req, res) => {
   }
 
 })
-
-
 
 app.listen(port, function() {
   console.log(`listening on port ${port}`);
