@@ -1,7 +1,6 @@
 .portfolio {
   font-family: 'Raleway', serif;
   width: 100%;
-  /* min-height: 80vh; */
   text-align: center;
   background-color: #FFE7E9;
   clip-path: polygon(100% 100%, 0 100%, 0 6%, 50% 0, 100% 6%);
@@ -253,7 +252,6 @@
   animation-delay: 2s;
 }
 
-/* MEDIA QUERIES */
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 960px) {

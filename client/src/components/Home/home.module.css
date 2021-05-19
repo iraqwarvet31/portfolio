@@ -2,7 +2,6 @@
   height: 100vh;
   background-color: #240115;
   text-align: center;
-  /* clip-path: polygon(0 0, 100% 0, 100% 1000px, 0 100%) */
 }
 
 .position {
