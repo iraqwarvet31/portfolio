@@ -109,7 +109,7 @@ class Contact extends React.Component {
             <div className={styles.form_container} method="POST">
 
               <ScrollAnimation animateIn={`animate__fadeIn ${styles.animate__rubberBand}`}>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} autoComplete="off">
                   <div className={`${styles.form_group} form-group ${styles.input_container}`}>
                     <label htmlFor="exampleFormControlInput1" />
                     <input
@@ -160,9 +160,7 @@ class Contact extends React.Component {
               smooth={true}
               duration={500}
             >
-              <a href="#">
-                <span className={`iconify ${styles.top_icon}`} data-icon="ant-design:arrow-up-outlined" data-inline="false"></span>
-              </a>
+              <span className={`iconify ${styles.top_icon}`} data-icon="ant-design:arrow-up-outlined" data-inline="false"></span>
             </Link>
             <div className={styles.ghost_container}></div>
             <div className={styles.icon_wrap}>
