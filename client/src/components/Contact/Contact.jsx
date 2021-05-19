@@ -34,26 +34,26 @@ class Contact extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    // this.setState({ status: "Sending" });
+    this.setState({ status: "Sending" });
 
-    // axios.post('/contact', this.state)
-    //   .then((response) => {
-    //     if (response.data === 'sent') {
-    //       this.setState({
-    //         name: '',
-    //         email: '',
-    //         message: '',
-    //         status: 'sent',
-    //       })
-    //     } else if (response.data === 'failed') {
-    //       this.setState({
-    //         name: '',
-    //         email: '',
-    //         message: '',
-    //         status: 'failed',
-    //       })
-    //     }
-    //   })
+    axios.post('/contact', this.state)
+      .then((response) => {
+        if (response.data === 'sent') {
+          this.setState({
+            name: '',
+            email: '',
+            message: '',
+            status: 'sent',
+          })
+        } else if (response.data === 'failed') {
+          this.setState({
+            name: '',
+            email: '',
+            message: '',
+            status: 'failed',
+          })
+        }
+      })
   }
 
   handleClose(e) {
