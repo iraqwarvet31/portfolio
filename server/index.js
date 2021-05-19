@@ -31,10 +31,10 @@ oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 router.post('/contact', (req, res) => {
   const {name, email, message} = req.body;
 
-  sendMail(name, email, message).then(result => console.log('Email sent...', result))
+  sendMail(name, email, message, res).then(result => console.log('Email sent...', result))
     .catch(error => console.log(error.message));
 
-  async function sendMail(name, email, message) {
+  async function sendMail(name, email, message, res) {
     try {
       const accessToken = await oAuth2Client.getAccessToken();
       const transport = nodemailer.createTransport({
@@ -56,10 +56,13 @@ router.post('/contact', (req, res) => {
       }
 
       const result = await transport.sendMail(mailOptions);
+
+      res.send('sent')
       return result;
 
 
     } catch (error) {
+      res.send('failed');
       return error;
     }
   }

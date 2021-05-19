@@ -12,10 +12,11 @@ class Contact extends React.Component {
       name: '',
       email: '',
       message: '',
-      status: 'Submit',
+      status: '',
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
   handleChange(e) {
@@ -35,45 +36,78 @@ class Contact extends React.Component {
 
     this.setState({ status: "Sending" });
 
-    // axios({
-    //   method: "POST",
-    //   url: "http://127.0.0.1:3000/contact",
-    //   withCredentials: true,
-    //   data: this.state,
-    // }).then((response) => {
-    //   if (response.data.status === 'sent') {
-    //     alert('Message Sent');
-    //     this.setState({ name: '', email: '', message: '', status: 'Submit'})
-    //   } else if (response.data.status === 'failed') {
-    //     alert('Message Failed');
-    //   }
-    // });
-
     axios.post('/contact', this.state)
       .then((response) => {
-        if (response.data.status === 'sent') {
-          alert('Message Sent');
-          this.setState({ name: '', email: '', message: '', status: 'Submit'})
-          } else if (response.data.status === 'failed') {
-            alert('Message Failed');
-          }
+        if (response.data === 'sent') {
+          this.setState({
+            name: '',
+            email: '',
+            message: '',
+            status: 'sent',
+          })
+        } else if (response.data === 'failed') {
+          this.setState({
+            name: '',
+            email: '',
+            message: '',
+            status: 'failed',
+          })
+        }
       })
   }
 
-  render() {
+  handleClose(e) {
+    e.preventDefault();
+    console.log('clicked')
+    this.setState({ status: '' });
+  }
 
+  render() {
+    const renderAlert = () => {
+      if (this.state.status === 'sent') {
+        return (
+          <div className={styles.alert_container} onClick={this.handleClose}>
+            <span>Message Sent!</span>
+            <span className={`${styles.successAlert} iconify`} data-icon="clarity:success-standard-line" data-inline="false" />
+            <span
+              class={`${styles.close_icon} iconify`}
+              data-icon="ant-design:close-outlined"
+              data-inline="false"
+              onClick={this.handleClose}
+            />
+          </div>
+        )
+      } else if (this.state.status === 'failed') {
+        return (
+          <div className={styles.alert_container} onClick={this.handleClose}>
+            <span>Not Sent!</span>
+            <span className={`${styles.failedAlert} iconify`} data-icon="jam:triangle-danger" data-inline="false" />
+            <span
+              class={`${styles.close_icon} iconify`}
+              data-icon="ant-design:close-outlined"
+              data-inline="false"
+              onClick={this.handleClose}
+            />
+          </div>
+        )
+      }
+    }
     return (
       <div id="contact" className={styles.wrapper}>
         <div className={styles.contact}>
           <div className={styles.container}>
+
             <ScrollAnimation animateIn={styles.animate__bounceInLeft}>
               <h1>CONTACT</h1>
             </ScrollAnimation>
+
             <ScrollAnimation animateIn={`${styles.animate__bounceInLeft} ${styles.delay}`}>
               <hr className={styles.heading} />
             </ScrollAnimation>
+
               <h5>Have a question?</h5>
             <div className={styles.form_container} method="POST">
+
               <ScrollAnimation animateIn={`animate__fadeIn ${styles.animate__rubberBand}`}>
                 <form onSubmit={this.handleSubmit}>
                   <div className={`${styles.form_group} form-group ${styles.input_container}`}>
@@ -113,9 +147,12 @@ class Contact extends React.Component {
                     SUBMIT
                   </button>
                 </form>
+                {renderAlert()}
               </ScrollAnimation>
+
             </div>
           </div>
+
           <footer className={styles.footer}>
             <Link
               activeClass="active"

@@ -75,6 +75,44 @@ input, textarea, select {
   border: 1px solid #ea0789;
 }
 
+.alert_container {
+  background-color: #240115;
+  width: 60%;
+  height: 75px;
+  margin: 100px auto 0 auto;
+}
+
+.alert_container span:nth-child(1) {
+  display: inline-block;
+  margin: 25px 0 0 25px;
+  position: relative;
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+.successAlert {
+  position: absolute;
+  top: 457px;
+  left: 120px;
+  color: lightgreen;
+  font-size: 20pt;
+}
+
+.failedAlert {
+  position: absolute;
+  top: 457px;
+  left: 120px;
+  color: red;
+  font-size: 20pt;
+}
+
+.close_icon {
+  position: absolute;
+  top: 445px;
+  left: 335px;
+  color: #fff;
+  cursor: pointer;
+}
 /* Social media icons */
 
 
@@ -313,6 +351,40 @@ input, textarea, select {
   .btnSubmit:hover {
     background-color: #ea0789;
     border: 1px solid #ea0789;
+  }
+
+  .alert_container {
+    width: 50%;
+    height: 50px;
+    margin: 75px auto 0 auto;
+  }
+
+  .alert_container span:nth-child(1) {
+    margin: 15px 0 0 15px;
+    font-weight: 600;
+    font-size: 10pt;
+  }
+
+  .successAlert {
+    position: absolute;
+    top: 30px !important;
+    left: 100px !important;
+    color: lightgreen;
+    font-size: 16pt;
+  }
+
+  .failedAlert {
+    position: absolute;
+    top: 413px !important;
+    left: 120px !important;
+    color: red;
+    font-size: 16pt
+  }
+
+  .close_icon {
+    top: 407px !important;
+    left: 285px !important;
+    font-size: 9pt;
   }
 
 }
