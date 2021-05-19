@@ -164,7 +164,7 @@ class Contact extends React.Component {
             </Link>
             <div className={styles.ghost_container}></div>
             <div className={styles.icon_wrap}>
-              <a href="https://www.linkedin.com/in/larryolguin/" target="_blank">
+              <a href="https://www.linkedin.com/in/larryolguin" target="_blank">
                 <div className={styles.icon_container}>
                   <span
                     className={`${styles.icon} iconify`}
@@ -210,3 +210,4 @@ class Contact extends React.Component {
 }
 
 export default Contact;
+

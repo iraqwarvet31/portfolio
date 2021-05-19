@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './about.module.css'
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { Link, animateScroll as scroll } from "react-scroll";
 import Navbar from '../Navbar/Navbar.jsx'
 
 const About = (props) => {
@@ -108,7 +109,14 @@ const About = (props) => {
               <span> I have a serious passion for solving complex</span>
               <span> problems and bringing ideas to life. No task is impossible.</span>
               <br />
+              <Link
+                activeClass="active"
+                to="contact" spy={true}
+                smooth={true}
+                duration={500}
+              >
               <a href="#"> Let's colaborate!</a>
+              </Link>
             </div>
           </div>
           <div className={styles.itemsContainer}>
