@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga'; //Google Analytics
 import {Link, animateScroll as scroll} from 'react-scroll';
 
 import Home from '../Home/Home.jsx';
@@ -20,6 +21,11 @@ class App extends React.Component {
     }
     this.showModal = this.showModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+  }
+
+  componentDidMount() {
+    ReactGA.initialize('2618023913');
+    ReactGA.pageview(window.location.pathname);
   }
 
   showModal(e) {
