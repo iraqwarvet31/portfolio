@@ -24,8 +24,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    ReactGA.initialize('2618023913');
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.initialize('2619161658');
+    ReactGA.pageview('/');
   }
 
   showModal(e) {
